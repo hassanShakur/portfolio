@@ -1,0 +1,1 @@
+export type Store = { menu: { isOpen: boolean } };
