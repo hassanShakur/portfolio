@@ -18,6 +18,8 @@ nav {
   right: 0;
   height: 100vh;
   width: 70vw;
+  display: grid;
+  place-items: center;
   background-color: #112240;
   transform: translateX(100%);
   transition: all 0.3s ease;

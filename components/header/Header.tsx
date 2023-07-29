@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import Sticks from './Sticks';
 import './header.css';
 import { Store } from '@/types/appTypes';
+import Navbar from './Navbar';
 
 const Header = () => {
   const { isOpen } = useSelector((store: Store) => store.menu);
@@ -15,7 +16,9 @@ const Header = () => {
           <div className='logo'>H</div>
           <Sticks />
         </div>
-        <nav className={isOpen ? 'menu-open' : ''}></nav>
+        <nav className={isOpen ? 'menu-open' : ''}>
+          <Navbar />
+        </nav>
       </header>
       {isOpen && <div className='backdrop'></div>}
     </>
