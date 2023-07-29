@@ -1,12 +1,14 @@
 'use client';
 
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import Sticks from './Sticks';
 import './header.css';
 import { Store } from '@/types/appTypes';
 import Navbar from './Navbar';
+import { menuActions } from '@/redux/app/menuSlice';
 
 const Header = () => {
+  const dispatch = useDispatch();
   const { isOpen } = useSelector((store: Store) => store.menu);
 
   return (
@@ -20,7 +22,12 @@ const Header = () => {
           <Navbar />
         </nav>
       </header>
-      {isOpen && <div className='backdrop'></div>}
+      {isOpen && (
+        <div
+          className='backdrop'
+          onClick={() => dispatch(menuActions.toggleMenu())}
+        ></div>
+      )}
     </>
   );
 };

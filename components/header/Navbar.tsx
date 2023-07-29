@@ -1,7 +1,7 @@
 import { navLinks } from '@/helpers/utils';
 import Link from 'next/link';
 import './navLinks.css';
-import Button from './button/Button';
+import Button from '../button';
 
 const Navbar = () => {
   return (

@@ -1,0 +1,11 @@
+/* #about  */
+
+h2 .line {
+  height: 1px;
+  flex-grow: 1;
+  background-color: rgba(var(--foreground-light-green), 0.3);
+}
+
+.number {
+  color: rgb(var(--foreground-light-green));
+}

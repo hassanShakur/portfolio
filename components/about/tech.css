@@ -1,0 +1,12 @@
+#about ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+#about ul li {
+  display: flex;
+  gap: 0.8rem;
+  font-size: 1.05rem;
+}

@@ -1,5 +1,5 @@
 'use client';
-import Header from '@/components/header/Header';
+import Header from '@/components/header';
 import './globals.css';
 
 import store from '@/redux/store';

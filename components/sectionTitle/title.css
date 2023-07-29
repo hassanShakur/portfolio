@@ -1,0 +1,8 @@
+h2 {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  gap: 0.8rem;
+  margin-bottom: 3.2rem;
+}
