@@ -5,9 +5,9 @@
 }
 
 .position-title {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  letter-spacing: 0.04rem;
+  letter-spacing: 0.01rem;
   text-transform: capitalize;
 }
 
@@ -15,19 +15,18 @@
   font-size: 0.9rem;
   letter-spacing: 0.01rem;
   opacity: 0.8;
-  word-spacing: 3px;
   text-transform: capitalize;
 }
 
 .position-roles {
   margin-top: 1rem;
   display: grid;
-  gap: 1rem;
+  gap: 1.4rem;
 }
 
 .role {
-  line-height: 1.3;
-  font-size: 1.04rem;
+  line-height: 1.4;
+  font-size: 0.95rem;
   display: flex;
   gap: 1rem;
 }

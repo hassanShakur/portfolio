@@ -13,7 +13,7 @@ const Positions = ({ activeTab }: { activeTab: number }) => {
           }`}
         >
           <h3 className='position-title'>
-            {pos.title} <span className='clg'>@ {pos.company}</span>
+            {pos.title} <span className='clg'>@{pos.company}</span>
           </h3>
 
           <p className='position-period'>{pos.period}</p>
