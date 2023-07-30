@@ -1,3 +1,5 @@
+import projectImg from '@/images/hack-3.jpg';
+
 export const navLinks = [
   { id: 1, name: 'about', href: '#about' },
   { id: 2, name: 'experience', href: '#experience' },
@@ -103,5 +105,59 @@ export const positions = [
           'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, excepturi possimus fugiat odio delectus consequuntur ea? Dicta assumenda.',
       },
     ],
+  },
+];
+
+export const projects = [
+  {
+    id: 1,
+    name: 'chrome browser',
+    badge: 'javaScript based',
+    image: projectImg,
+    github: 'https://github.com/hassanShakur',
+    live: 'https://github.com/hassanShakur',
+    techs: [
+      { id: 1, name: 'typeScript' },
+      { id: 2, name: 'react' },
+      { id: 3, name: 'styled components' },
+      { id: 4, name: 'node' },
+      { id: 5, name: 'mongoose' },
+    ],
+    summary:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nihil accusantium, quod et quam facere odio. Accusamus, eum? Repudiandae, quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, facere.',
+  },
+  {
+    id: 2,
+    name: 'desktop cache',
+    badge: 'react based',
+    image: projectImg,
+    github: 'https://github.com/hassanShakur',
+    live: 'https://github.com/hassanShakur',
+    techs: [
+      { id: 1, name: 'typeScript' },
+      { id: 2, name: 'react' },
+      { id: 3, name: 'styled components' },
+      { id: 4, name: 'node' },
+      { id: 5, name: 'mongoose' },
+    ],
+    summary:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nihil accusantium, quod et quam facere odio. Accusamus, eum? Repudiandae, quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, facere.',
+  },
+  {
+    id: 3,
+    name: 'capstone project',
+    badge: 'typeScript based',
+    image: projectImg,
+    github: 'https://github.com/hassanShakur',
+    live: 'https://github.com/hassanShakur',
+    techs: [
+      { id: 1, name: 'typeScript' },
+      { id: 2, name: 'react' },
+      { id: 3, name: 'styled components' },
+      { id: 4, name: 'node' },
+      { id: 5, name: 'mongoose' },
+    ],
+    summary:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nihil accusantium, quod et quam facere odio. Accusamus, eum? Repudiandae, quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, facere.',
   },
 ];

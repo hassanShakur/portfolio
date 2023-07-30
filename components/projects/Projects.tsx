@@ -1,0 +1,19 @@
+import SectionTitle from '../sectionTitle';
+import './projects.css';
+import { projects } from '@/helpers/utils';
+import Project from './Project';
+
+const Projects = () => {
+  return (
+    <section id='projects'>
+      <SectionTitle number={3} title="some things i've built" />
+      <div className='projects'>
+        {projects.map((project) => (
+          <Project key={project.id} project={project} />
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default Projects;

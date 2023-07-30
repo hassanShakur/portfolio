@@ -5,16 +5,16 @@
 }
 
 .position-title {
-  font-size: 1.2rem;
+  font-size: 1.14rem;
   font-weight: 600;
   letter-spacing: 0.01rem;
   text-transform: capitalize;
 }
 
 .position-period {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   letter-spacing: 0.01rem;
-  opacity: 0.8;
+  opacity: 0.7;
   text-transform: capitalize;
 }
 
@@ -26,7 +26,9 @@
 
 .role {
   line-height: 1.4;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
+  font-weight: 400;
+  opacity: 0.9;
 }

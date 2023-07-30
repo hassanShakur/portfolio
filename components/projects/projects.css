@@ -1,0 +1,10 @@
+.projects {
+  display: grid;
+  gap: 3rem;
+}
+
+.project {
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid rgba(var(--foreground-light-green), 0.2);
+}

@@ -26,6 +26,7 @@
   /* font-family: 'inter'; */
   font-family: var(--font-mono);
   /* font-weight: 400; */
+  transition: 0.2s ease-in-out;
 }
 
 *::-webkit-scrollbar {
@@ -69,9 +70,11 @@ section {
 }
 
 .text {
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.5;
   margin-bottom: 0.8rem;
+  font-weight: 400;
+  opacity: 0.9;
 }
 
 #invisible {

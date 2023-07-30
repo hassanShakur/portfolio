@@ -1,0 +1,67 @@
+
+.project-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  border-radius: 8px;
+}
+
+.project-img > * {
+  border-radius: 8px;
+}
+
+.project-info #badge {
+    text-transform: capitalize;
+  font-size: 0.7rem;
+  color: rgb(var(--foreground-light-green));
+}
+
+.project-info,
+.project-actions {
+  padding: 1.6rem 1rem;
+  background-color: transparent;
+  position: relative;
+  z-index: 3;
+  background-color: rgba(11, 28, 49, 0.88);
+}
+
+.project-info {
+  padding-bottom: 1rem;
+}
+
+.project-info h3 {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+  margin-top: 0.6rem;
+}
+
+.project-info .project-tech {
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.project-actions {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.project-actions button {
+  padding: 0;
+  border: none;
+  color: inherit;
+  font-size: 1.6rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.project-actions button:hover {
+  box-shadow: unset;
+  transform: scale(1.15);
+  color: rgb(var(--foreground-light-green));
+}

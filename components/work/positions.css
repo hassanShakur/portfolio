@@ -1,6 +1,6 @@
 .positions {
-  position: relative;
-  min-height: 500px;
+  position: static;
+  min-height: 450px;
 }
 
 .position {
