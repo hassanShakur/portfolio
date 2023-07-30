@@ -7,13 +7,15 @@ const Hero = () => {
     <section id='hero'>
       <div className='hero-text'>
         <div className='drop'>
-          <span id='drop-cap' className='color-gr'>
+          <span id='drop-cap' className='clg'>
             h
           </span>
-          <div className='intro color-gr'>i, my name is</div>
-          <h1 className='name'>
-            <span id='invisible'>h</span>assan Shakur.
-          </h1>
+          <div className='drop-content'>
+            <h3 className='intro clg'>i, my name is</h3>
+            <h1 className='name'>
+              <span id='invisible'>h</span>assan Shakur.
+            </h1>
+          </div>
         </div>
 
         <div className='title'>A software engineer.</div>
@@ -24,7 +26,7 @@ const Hero = () => {
           Currently, I&apos;m a Web Developer and Mentor at{' '}
           <Link
             href={'https://www.microverse.org'}
-            className='color-gr'
+            className='clg'
             target='_blank'
           >
             Microverse

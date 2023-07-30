@@ -10,19 +10,16 @@ const AboutText = () => {
       </p>
       <p className='text'>
         3 years later, I was drowning in a passion for programming as
-        I joined the <span className='color-gr'>University</span>{' '}
-        pursuing a degree in{' '}
-        <span className='color-gr'>Computer Science</span>.
+        I joined the <span className='clg'>University</span> pursuing
+        a degree in <span className='clg'>Computer Science</span>.
       </p>
 
       <p className='text'>
         Fast-foward to today, and I&apos;ve had the pleasure of
         constributing to several tech organizations as a{' '}
-        <span className='color-gr'>freelancer</span>,{' '}
-        <span className='color-gr'>
-          frontend and backend developer
-        </span>
-        , and a <span className='color-gr'>mentor</span>.
+        <span className='clg'>freelancer</span>,{' '}
+        <span className='clg'>frontend and backend developer</span>,
+        and a <span className='clg'>mentor</span>.
       </p>
     </>
   );

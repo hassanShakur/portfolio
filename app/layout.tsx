@@ -8,12 +8,6 @@ import { Provider } from 'react-redux';
 
 // const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'Hassan Shakur',
-  description:
-    'Hassan Shakur is a software engineer who specializes in building exceptional web & app products.',
-};
-
 export default function RootLayout({
   children,
 }: {

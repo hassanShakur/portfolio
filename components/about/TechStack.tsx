@@ -10,7 +10,7 @@ const TechStack = () => {
       <ul>
         {techStack.map((tech) => (
           <li key={tech.id}>
-            <span className='color-gr'>⇨</span>
+            <span className='clg'>⇨</span>
             <span>{tech.name}</span>
           </li>
         ))}

@@ -7,28 +7,30 @@
 }
 
 .drop {
-  display: grid;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.drop-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 #drop-cap {
   font-size: 6rem;
   text-transform: uppercase;
-  grid-row: 1 / 10;
-  grid-column: 1 / 2;
 }
 
 .intro {
   font-size: 1.3rem;
-  grid-row: 5;
-  grid-column: 2 / 10;
 }
 
 .name {
   font-size: 2.2rem;
   letter-spacing: 1px;
   font-weight: 500;
-  grid-row: 6;
-  grid-column: 2 / 10;
 }
 
 .title {

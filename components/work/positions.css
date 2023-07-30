@@ -1,0 +1,14 @@
+.positions {
+  background-color: red;
+  position: relative;
+}
+
+.position {
+  position: absolute;
+  /* opacity: 0; */
+  transition: all 0.3s ease;
+}
+
+.show-position {
+  opacity: 1;
+}
