@@ -16,3 +16,14 @@ export type ProjectProps = {
   }[];
   summary: string;
 };
+export type CardProjectProps = {
+  id: number;
+  name: string;
+  github: string;
+  live: string;
+  techs: {
+    id: number;
+    name: string;
+  }[];
+  summary: string;
+};

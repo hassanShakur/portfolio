@@ -5,7 +5,7 @@ import './info.css'
 
 const Work = () => {
   return (
-    <section id='work'>
+    <section id='jobs'>
       <SectionTitle number={2} title="where i've worked" />
       <CompanyTabs />
     </section>

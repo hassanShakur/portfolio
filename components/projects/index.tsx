@@ -2,6 +2,7 @@ import SectionTitle from '../sectionTitle';
 import './projects.css';
 import { projects } from '@/helpers/utils';
 import Project from './Project';
+import OtherProjects from './others';
 
 const Projects = () => {
   return (
@@ -12,6 +13,7 @@ const Projects = () => {
           <Project key={project.id} project={project} />
         ))}
       </div>
+      <OtherProjects />
     </section>
   );
 };

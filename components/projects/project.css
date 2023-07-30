@@ -1,4 +1,3 @@
-
 .project-img {
   position: absolute;
   top: 0;
@@ -14,7 +13,7 @@
 }
 
 .project-info #badge {
-    text-transform: capitalize;
+  text-transform: capitalize;
   font-size: 0.7rem;
   color: rgb(var(--foreground-light-green));
 }
@@ -52,7 +51,7 @@
   border-bottom-right-radius: 8px;
 }
 
-.project-actions button {
+.projects button {
   padding: 0;
   border: none;
   color: inherit;
@@ -60,7 +59,7 @@
   transition: all 0.2s ease-in-out;
 }
 
-.project-actions button:hover {
+.projects button:hover {
   box-shadow: unset;
   transform: scale(1.15);
   color: rgb(var(--foreground-light-green));

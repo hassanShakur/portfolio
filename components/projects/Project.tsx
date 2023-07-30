@@ -12,10 +12,9 @@ const Project = ({ project }: { project: ProjectProps }) => {
           src={project.image}
           alt={project.name}
           placeholder='blur'
+          fill
           style={{
             objectFit: 'cover',
-            width: '100%',
-            height: '100%',
           }}
         />
       </div>

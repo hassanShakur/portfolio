@@ -23,9 +23,7 @@
   margin: 0;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  /* font-family: 'inter'; */
   font-family: var(--font-mono);
-  /* font-weight: 400; */
   transition: 0.2s ease-in-out;
 }
 
@@ -37,6 +35,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -66,7 +65,8 @@ main {
 }
 
 section {
-  margin: 5rem 0;
+  margin: 2rem 0;
+  padding: 3rem 0;
 }
 
 .text {
