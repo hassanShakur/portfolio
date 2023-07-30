@@ -1,0 +1,19 @@
+footer {
+  margin: 1rem 0;
+  text-align: center;
+  display: grid;
+  gap: 1.4rem;
+}
+
+.social-icons {
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+footer .attribution {
+  font-size: 0.7rem;
+  line-height: 1.8;
+}

@@ -19,9 +19,9 @@ const Contact = () => {
       </p>
 
       <div className='contact-actions'>
-        {/* <Link href={'mailto:dev.hassanshakur@gmail.com'}> */}
-        <Button text='say hello' />
-        {/* </Link> */}
+        <Link href={'mailto:dev.hassanshakur@gmail.com'}>
+          <Button text='say hello' />
+        </Link>
       </div>
     </section>
   );
