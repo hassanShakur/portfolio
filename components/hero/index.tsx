@@ -11,9 +11,11 @@ const Hero = () => {
             h
           </span>
           <div className='drop-content'>
-            <h3 className='intro clg'>i, my name is</h3>
+            <h3 className='intro clg'>
+              <span id='invisible'>H</span>i, my name is
+            </h3>
             <h1 className='name'>
-              <span id='invisible'>h</span>assan Shakur.
+              <span id='invisible'>H</span>assan Shakur.
             </h1>
           </div>
         </div>

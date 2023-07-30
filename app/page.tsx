@@ -1,4 +1,5 @@
 import About from '@/components/about';
+import Contact from '@/components/contact';
 import Hero from '@/components/hero';
 import Projects from '@/components/projects';
 import Work from '@/components/work';
@@ -16,6 +17,9 @@ export default function Home() {
       <About />
       <Work />
       <Projects />
+      <Contact />
     </main>
   );
 }
+
+// For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'yarn add sharp', and Next.js will use it automatically for Image Optimization.

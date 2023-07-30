@@ -1,0 +1,23 @@
+#contact {
+  text-align: center;
+  display: grid;
+  gap: 1.6rem;
+}
+
+.contact-title {
+  display: grid;
+  gap: 1.2rem;
+  text-transform: capitalize;
+}
+
+.contact-title h6 {
+  font-size: 0.9rem;
+}
+
+.contact-title h3 {
+  font-size: 1.8rem;
+}
+
+.contact-actions {
+    margin-top: 2rem;
+}
