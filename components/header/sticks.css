@@ -36,3 +36,8 @@
   transform: translateY(-0.7rem) rotate(-405deg);
 }
 
+@media (min-width: 768px) {
+  .sticks {
+    display: none;
+  }
+}

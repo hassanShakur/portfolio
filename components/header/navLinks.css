@@ -17,3 +17,25 @@ li a {
 li a .number {
   color: rgb(var(--foreground-light-green));
 }
+
+@media (min-width: 768px) {
+  nav ul {
+    height: unset;
+    padding: unset;
+    display: flex;
+    gap: 1.8rem;
+    margin-bottom: 0;
+  }
+
+  li a {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  nav button {
+    font-size: 0.8rem;
+    padding: 0.6rem 1.6rem;
+    border-radius: 4px;
+  }
+}

@@ -84,13 +84,32 @@ section {
 
 @media (min-width: 480px) {
   main {
-    padding: 3vw 8vw;
+    padding: 1rem 8vw;
   }
 
   .text {
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    padding: 1rem 6rem;
+  }
+}
+
+@media (min-width: 1080px) {
+  main {
+    padding: 1rem 10rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  main {
+    max-width: 1250px;
+    margin: 1rem auto;
   }
 }
 

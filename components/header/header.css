@@ -42,3 +42,31 @@ body:has(.menu-open) {
   backdrop-filter: blur(5px);
   z-index: 3;
 }
+
+@media (min-width: 768px) {
+  header {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    z-index: 10;
+  }
+
+  nav {
+    position: unset;
+    height: unset;
+    width: unset;
+    display: flex;
+    gap: 1.2rem;
+    place-items: center;
+    background-color: transparent;
+    transform: translateX(0);
+    z-index: 10;
+  }
+}
+
+@media (min-width: 1080px) {
+  header {
+    padding: 1rem 3rem;
+  }
+}

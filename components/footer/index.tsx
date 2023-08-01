@@ -50,6 +50,13 @@ const Footer = () => {
             {platform.icon}
           </Link>
         ))}
+        <div id='social-line'></div>
+      </div>
+      <div id='email'>
+        <Link href={'mailto:dev.hassanshakur@gmail.com'}>
+          dev.hassanshakur@gmail.com
+        </Link>
+        <div id='email-line'></div>
       </div>
       <p className='attribution text'>
         Designed &amp; Built by{' '}
