@@ -1,7 +1,9 @@
 import SectionTitle from '../sectionTitle';
 import AboutText from './AboutText';
 import TechStack from './TechStack';
+import myPortrait from '@/images/hassan-shakur.jpg';
 import './about.css';
+import Image from 'next/image';
 
 const About = () => {
   return (
@@ -11,7 +13,19 @@ const About = () => {
         <AboutText />
         <TechStack />
       </div>
-      <div className='about-img'></div>
+      <div id='about-img'>
+        <div id="outline"></div>
+        <div id="front-drop"></div>
+        <Image
+          src={myPortrait}
+          placeholder='blur'
+          style={{
+            width: '100%',
+            height: 'auto'
+          }}
+          alt='A portrait of Hassan Shakur'
+        />
+      </div>
     </section>
   );
 };
