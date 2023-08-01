@@ -12,3 +12,9 @@
 .show-position {
   transform: scale(1);
 }
+
+/* @media (min-width: 600px) {
+  .positions {
+    min-height: 400px;
+  }
+} */

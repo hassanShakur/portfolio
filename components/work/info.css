@@ -32,3 +32,31 @@
   font-weight: 400;
   opacity: 0.9;
 }
+
+@media (min-width: 480px) {
+  .role {
+    line-height: 1.5;
+    font-size: 0.9rem;
+    gap: 1.3rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .position {
+    margin-top: 0;
+  }
+
+  .position-period {
+    font-size: 0.8rem;
+  }
+
+  .position-roles {
+    margin-top: 1rem;
+    display: grid;
+    gap: 1.4rem;
+  }
+
+  .role {
+    gap: 1.2rem;
+  }
+}

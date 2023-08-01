@@ -24,7 +24,7 @@
   background-color: transparent;
   position: relative;
   z-index: 3;
-  background-color: rgba(7, 27, 51, 0.88);
+  background-color: rgba(7, 19, 45, 0.9);
 }
 
 .project-info {
@@ -86,11 +86,10 @@
 
   .project-info .project-description {
     opacity: 0.9;
-    font-size: 2.5vw;
+    font-size: 0.9rem;
   }
 
   .project-info .project-tech {
-    text-transform: capitalize;
-    font-size: 2.5vw;
+    font-size: 0.9rem;
   }
 }

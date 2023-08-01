@@ -9,8 +9,8 @@ h2 {
 
 @media (min-width: 480px) {
   h2 {
-    font-size: 4.2vw;
+    font-size: 3.6vw;
     gap: 2vw;
-    margin-bottom: 12vw;
+    margin-bottom: 4rem;
   }
 }

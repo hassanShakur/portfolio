@@ -30,5 +30,41 @@
 
 li.active {
   background-color: rgb(var(--hover-rgb));
+  color: rgb(var(--foreground-light-green));
   border-bottom: 3px solid rgb(var(--foreground-light-green));
+}
+
+@media (min-width: 600px) {
+  .companies-container {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .companies {
+    flex-direction: column;
+    font-size: 0.85rem;
+    border-bottom: 0;
+    border-left: 3px solid rgba(var(--foreground-rgb), 0.3);
+    overflow-x: visible;
+  }
+
+  .companies li {
+    padding: 0.8rem 1rem;
+    min-width: 7rem;
+    text-align: left;
+    border-top-left-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom: none;
+    border-left: 1px solid transparent;
+    transform: translateX(-2px);
+    transition: all 0.2s ease-in-out;
+  }
+
+  li.active {
+    background-color: rgb(var(--hover-rgb));
+    border-bottom: none;
+    border-left: 3px solid rgb(var(--foreground-light-green));
+  }
 }

@@ -84,12 +84,12 @@ section {
 
 @media (min-width: 480px) {
   main {
-    padding: 3vw 10vw;
+    padding: 3vw 8vw;
   }
 
   .text {
-    font-size: 3vw;
-    line-height: 1.8;
+    font-size: 1rem;
+    line-height: 1.5;
     margin-bottom: 1rem;
   }
 }
