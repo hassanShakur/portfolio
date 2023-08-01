@@ -1,5 +1,5 @@
 footer {
-  margin: 1rem 0;
+  margin: 4rem 0 0.3rem;
   text-align: center;
   display: grid;
   gap: 1.4rem;
@@ -11,6 +11,12 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 2rem;
+}
+
+.social-icons a:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  color: rgb(var(--foreground-light-green));
 }
 
 footer .attribution {

@@ -24,7 +24,7 @@
   background-color: transparent;
   position: relative;
   z-index: 3;
-  background-color: rgba(11, 28, 49, 0.88);
+  background-color: rgba(7, 27, 51, 0.88);
 }
 
 .project-info {
@@ -38,9 +38,18 @@
   margin-top: 0.6rem;
 }
 
+.project-info .project-description {
+  opacity: 0.8;
+  font-size: 0.8rem;
+  line-height: 1.7;
+  margin-top: 1.6rem;
+}
+
 .project-info .project-tech {
   text-transform: capitalize;
-  opacity: 1;
+  opacity: 0.95;
+  font-size: 0.85rem;
+  margin-top: 2rem;
 }
 
 .project-actions {
@@ -63,4 +72,25 @@
   box-shadow: unset;
   transform: scale(1.15);
   color: rgb(var(--foreground-light-green));
+}
+
+@media (min-width: 480px) {
+  .project-info,
+  .project-actions {
+    padding: 1.4rem 2rem;
+  }
+
+  .project-actions {
+    padding: 0 2rem 2rem;
+  }
+
+  .project-info .project-description {
+    opacity: 0.9;
+    font-size: 2.5vw;
+  }
+
+  .project-info .project-tech {
+    text-transform: capitalize;
+    font-size: 2.5vw;
+  }
 }

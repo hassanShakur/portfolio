@@ -50,6 +50,7 @@ body:has(.menu-open) {
 a {
   color: inherit;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 
 ul li {
@@ -79,6 +80,18 @@ section {
 
 #invisible {
   display: none;
+}
+
+@media (min-width: 480px) {
+  main {
+    padding: 3vw 10vw;
+  }
+
+  .text {
+    font-size: 3vw;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

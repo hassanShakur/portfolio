@@ -52,7 +52,7 @@ const Footer = () => {
         ))}
       </div>
       <p className='attribution text'>
-        Built &amp; Designed by{' '}
+        Designed &amp; Built by{' '}
         <Link
           href={'https://github.com/hassanShakur'}
           className='clg'
