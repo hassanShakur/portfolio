@@ -13,6 +13,7 @@
   gap: 0;
   overflow-x: scroll;
   border-bottom: 1px solid rgba(var(--foreground-rgb), 0.3);
+  z-index: 2;
 }
 
 .companies li {
@@ -31,15 +32,23 @@
 
 .companies li:hover {
   background-color: rgb(var(--hover-rgb));
+  border-color: rgba(var(--foreground-rgb), 0.3);
 }
 
 li.active {
-  background-color: rgb(var(--hover-rgb));
   color: rgb(var(--foreground-light-green));
   border-bottom: 3px solid rgb(var(--foreground-light-green));
 }
 
+li.active:hover {
+  border-color: rgb(var(--foreground-light-green));;
+}
+
 @media (min-width: 600px) {
+  #jobs {
+    margin-top: 8rem;
+  }
+
   .companies-container {
     display: flex;
     gap: 2rem;
@@ -62,13 +71,12 @@ li.active {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     border-bottom: none;
-    border-left: 1px solid transparent;
+    border-left: 3px solid transparent;
     transform: translateX(-2px);
     transition: all 0.2s ease-in-out;
   }
 
   li.active {
-    background-color: rgb(var(--hover-rgb));
     border-bottom: none;
     border-left: 3px solid rgb(var(--foreground-light-green));
   }

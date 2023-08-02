@@ -46,7 +46,11 @@ const Footer = () => {
     <footer>
       <div className='social-icons'>
         {footerIcons.map((platform) => (
-          <Link key={platform.id} href={platform.href}>
+          <Link
+            key={platform.id}
+            href={platform.href}
+            target='_blank'
+          >
             {platform.icon}
           </Link>
         ))}
@@ -62,6 +66,7 @@ const Footer = () => {
         Designed &amp; Built by{' '}
         <Link
           href={'https://github.com/hassanShakur'}
+          target='_blank'
           className='clg'
         >
           Hassan Shakur
@@ -69,8 +74,12 @@ const Footer = () => {
         .
         <br />
         Original Design by{' '}
-        <Link href={'https://github.com/bchiang7'} className='clg'>
-          Britanny Chiang
+        <Link
+          href={'https://github.com/bchiang7'}
+          target='_blank'
+          className='clg'
+        >
+          Brittany Chiang
         </Link>
         .
       </p>

@@ -15,7 +15,7 @@ footer {
 
 .social-icons a:hover {
   cursor: pointer;
-  transform: translateY(-5px);
+  transform: translateY(-5px) scale(1.08);
   color: rgb(var(--foreground-light-green));
 }
 
@@ -76,6 +76,7 @@ footer .attribution {
 @media (min-width: 1080px) {
   .social-icons {
     left: 4rem;
+    font-size: 1.4rem;
   }
 
   #email {
