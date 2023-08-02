@@ -20,7 +20,6 @@
 
 .project-info,
 .project-actions {
-  padding: 1.6rem 1rem;
   background-color: transparent;
   position: relative;
   z-index: 3;
@@ -29,6 +28,7 @@
 
 .project-info {
   padding-bottom: 1rem;
+  padding: 1.6rem 1rem;
 }
 
 .project-info h3 {
@@ -55,7 +55,7 @@
 .project-actions {
   display: flex;
   gap: 1rem;
-  padding: 1rem;
+  padding: 1rem 0;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
@@ -75,13 +75,8 @@
 }
 
 @media (min-width: 480px) {
-  .project-info,
-  .project-actions {
+  .project-info {
     padding: 1.4rem 2rem;
-  }
-
-  .project-actions {
-    padding: 0 2rem 2rem;
   }
 
   .project-info .project-description {
@@ -91,5 +86,88 @@
 
   .project-info .project-tech {
     font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .project-img {
+    position: unset;
+    height: auto;
+    z-index: 2;
+    border-radius: 8px;
+    grid-row: 1 / 2;
+  }
+
+  .project:nth-child(even) .project-img {
+    grid-column: 4 / 6;
+  }
+
+  .project:nth-child(odd) .project-img {
+    grid-column: 1 / 3;
+  }
+
+  .project-img > * {
+    width: inherit;
+    height: auto;
+  }
+
+  .project-info {
+    background-color: transparent;
+    grid-row: 1 / 2;
+  }
+
+  .project:nth-child(even) .project-info {
+    grid-column: 1 / 5;
+  }
+
+  .project:nth-child(odd) .project-info {
+    grid-column: 2 / 6;
+    text-align: right;
+  }
+
+  .project:nth-child(odd) .project-actions {
+    margin-left: auto;
+    width: fit-content;
+  }
+
+  .project-info .project-description {
+    background-color: #112240;
+    padding: 1.5rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+  }
+
+  .project-info .project-tech {
+    font-size: 0.8rem;
+  }
+
+  .project-actions {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 1080px) {
+  .project:nth-child(even) .project-img {
+    grid-column: 5 / 11;
+  }
+
+  .project:nth-child(odd) .project-img {
+    grid-column: 1 / 6;
+  }
+
+  .project:nth-child(even) .project-info {
+    grid-column: 1 / 6;
+  }
+
+  .project:nth-child(odd) .project-info {
+    grid-column: 4 / 11;
+  }
+
+  .project-info .project-tech {
+    width: 75%;
+  }
+
+  .project:nth-child(odd) .project-tech {
+    margin-left: auto;
   }
 }

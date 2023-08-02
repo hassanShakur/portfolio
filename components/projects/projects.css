@@ -9,3 +9,17 @@
   box-shadow: 0px 0px 2px 4px rgba(7, 28, 54, 0.826);
   /* border: 1px solid rgba(var(--foreground-light-green), 0.2); */
 }
+
+@media (min-width: 768px) {
+  .project {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 1080px) {
+  .project {
+    grid-template-columns: repeat(9, 1fr);
+  }
+}

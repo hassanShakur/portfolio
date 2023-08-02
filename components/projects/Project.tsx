@@ -12,10 +12,10 @@ const Project = ({ project }: { project: ProjectProps }) => {
           src={project.image}
           alt={project.name}
           placeholder='blur'
-          fill
-          style={{
-            objectFit: 'cover',
-          }}
+          // fill
+          // style={{
+          //   objectFit: 'cover',
+          // }}
         />
       </div>
 
@@ -26,19 +26,19 @@ const Project = ({ project }: { project: ProjectProps }) => {
         <p className='project-tech text'>
           {project.techs.map((tech) => `${tech.name} `)}
         </p>
-      </div>
 
-      <div className='project-actions'>
-        <button type='button'>
-          <Link href={project.github} target='_blank'>
-            <TbBrandGithub />
-          </Link>
-        </button>
-        <button type='button'>
-          <Link href={project.live} target='_blank'>
-            <TbLink />
-          </Link>
-        </button>
+        <div className='project-actions'>
+          <button type='button'>
+            <Link href={project.github} target='_blank'>
+              <TbBrandGithub />
+            </Link>
+          </button>
+          <button type='button'>
+            <Link href={project.live} target='_blank'>
+              <TbLink />
+            </Link>
+          </button>
+        </div>
       </div>
     </div>
   );
