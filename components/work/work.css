@@ -41,7 +41,7 @@ li.active {
 }
 
 li.active:hover {
-  border-color: rgb(var(--foreground-light-green));;
+  border-color: rgb(var(--foreground-light-green));
 }
 
 @media (min-width: 600px) {

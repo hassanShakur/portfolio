@@ -39,3 +39,9 @@ li a .number {
     border-radius: 4px;
   }
 }
+
+@media (min-width: 1080px) {
+  nav ul {
+    gap: 2.4rem;
+  }
+}

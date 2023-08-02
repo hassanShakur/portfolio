@@ -12,11 +12,6 @@
   --hover-rgb: 17, 34, 64;
 }
 
-/* @font-face {
-  font-family: 'inter';
-  src: url(./../fonts/Inter/static/Inter-Light.ttf);
-} */
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -104,11 +99,15 @@ section {
   main {
     padding: 1rem 10rem;
   }
+
+  section {
+    margin: 5rem 0;
+  }
 }
 
 @media (min-width: 1300px) {
   main {
-    max-width: 1250px;
+    max-width: 1350px;
     margin: 1rem auto;
   }
 }

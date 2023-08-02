@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import './hero.css';
 import Button from '../button';
+import './hero.css';
 
 const Hero = () => {
   return (

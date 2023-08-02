@@ -21,3 +21,10 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+
+@media (min-width: 1080px) {
+  .other-projects .cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}

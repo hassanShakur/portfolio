@@ -55,7 +55,7 @@
 
 @media (min-width: 480px) {
   .project-card {
-    padding: 5vw;
+    padding: 2rem;
   }
 
   .card-header {
@@ -63,7 +63,7 @@
   }
 
   .card-info h4 {
-    font-size: 3.2vw;
+    font-size: 1.3rem;
     margin-bottom: 1.4rem;
   }
 
@@ -77,5 +77,27 @@
 
   .links {
     gap: 0.8rem;
+  }
+}
+
+@media (min-width: 1080px) {
+  .project-card {
+    padding: 2.5rem 2rem;
+  }
+
+  .card-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .card-info h4 {
+    font-size: 1.1rem;
+  }
+
+  .card-info .card-summary {
+    font-size: 0.75rem;
+  }
+
+  .card-info .card-tech {
+    font-size: 0.7rem;
   }
 }

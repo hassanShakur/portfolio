@@ -29,6 +29,11 @@ footer .attribution {
 }
 
 @media (min-width: 768px) {
+  footer {
+    margin-bottom: 0;
+    margin-top: 6rem;
+  }
+
   .social-icons {
     position: fixed;
     bottom: 0;
@@ -75,11 +80,19 @@ footer .attribution {
 
 @media (min-width: 1080px) {
   .social-icons {
-    left: 4rem;
-    font-size: 1.4rem;
+    left: 3rem;
+    font-size: 1.2rem;
   }
 
   #email {
-    right: 4rem;
+    right: 3rem;
+  }
+
+  #email-line {
+    width: 12vh;
+  }
+
+  #social-line {
+    height: 12vh;
   }
 }

@@ -1,6 +1,5 @@
 import { positions } from '@/helpers/utils';
 import './positions.css';
-// import {} from 'react-tra'
 
 const Positions = ({ activeTab }: { activeTab: number }) => {
   return (
