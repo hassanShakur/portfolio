@@ -19,6 +19,7 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
   font-family: var(--font-mono);
+  /* font-family: 'my-font'; */
   transition: 0.2s ease-in-out;
 }
 
@@ -46,6 +47,10 @@ a {
   color: inherit;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  color: rgb(var(--foreground-light-green));
 }
 
 ul li {

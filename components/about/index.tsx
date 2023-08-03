@@ -19,6 +19,7 @@ const About = () => {
         <Image
           src={myPortrait}
           placeholder='blur'
+          priority
           style={{
             width: '100%',
             height: 'auto'

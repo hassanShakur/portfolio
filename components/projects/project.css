@@ -74,7 +74,6 @@
 .projects button:hover {
   box-shadow: unset;
   transform: scale(1.15);
-  color: rgb(var(--foreground-light-green));
 }
 
 @media (min-width: 480px) {

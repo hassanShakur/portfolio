@@ -33,6 +33,7 @@
 .companies li:hover {
   background-color: rgb(var(--hover-rgb));
   border-color: rgba(var(--foreground-rgb), 0.3);
+  color: rgb(var(--foreground-light-green));
 }
 
 li.active {

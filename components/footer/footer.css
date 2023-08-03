@@ -16,7 +16,6 @@ footer {
 .social-icons a:hover {
   cursor: pointer;
   transform: translateY(-5px) scale(1.08);
-  color: rgb(var(--foreground-light-green));
 }
 
 #email {
@@ -62,7 +61,6 @@ footer .attribution {
   #email a:hover {
     cursor: pointer;
     transform: translateX(-5px);
-    color: rgb(var(--foreground-light-green));
   }
 
   #email-line {

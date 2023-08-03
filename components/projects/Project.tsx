@@ -7,17 +7,19 @@ import './project.css';
 const Project = ({ project }: { project: ProjectProps }) => {
   return (
     <div className='project'>
-      <div className='project-img'>
+      <Link href={project.live} className='project-img'>
         <Image
           src={project.image}
           alt={project.name}
           placeholder='blur'
         />
-      </div>
+      </Link>
 
       <div className='project-info'>
         <span id='badge'>{project.badge}</span>
-        <h3>{project.name}</h3>
+        <Link href={project.live}>
+          <h3>{project.name}</h3>
+        </Link>
         <p className='project-description text'>{project.summary}</p>
         <p className='project-tech text'>
           {project.techs.map((tech) => `${tech.name} `)}
