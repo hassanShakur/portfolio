@@ -11,7 +11,7 @@ const Contact = () => {
       </div>
 
       <p className='contact-text text'>
-        I&apos;m open for any new opportunities. Leave me a message in
+        I&apos;m open to any new opportunities. Leave me a message in
         my inbox and I will get back to you. Whether it&apos;s a
         position, project, collaborations or just wanna say{' '}
         <span className='clg'>Hi</span>, I&apos;ll be happy to hear
