@@ -1,5 +1,5 @@
 footer {
-  margin: 4rem 0 0.3rem;
+  margin: 4rem 0 0;
   text-align: center;
   display: grid;
   gap: 1.4rem;
@@ -49,8 +49,7 @@ footer .attribution {
     position: fixed;
     bottom: -0.5rem;
     right: 2rem;
-    opacity: 0.7;
-    font-size: 0.9rem;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     gap: 1.5rem;
@@ -73,6 +72,11 @@ footer .attribution {
     width: 2px;
     height: 15vh;
     background-color: rgb(var(--foreground-rgb));
+  }
+
+  footer .attribution {
+    font-size: 0.8rem;
+    letter-spacing: normal;
   }
 }
 

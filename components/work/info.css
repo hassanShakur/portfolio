@@ -5,15 +5,15 @@
 }
 
 .position-title {
-  font-size: 1.14rem;
-  font-weight: 600;
+  font-size: 1.4rem;
+  font-weight: 500;
   letter-spacing: 0.01rem;
   text-transform: capitalize;
 }
 
 .position-period {
-  font-size: 0.85rem;
-  letter-spacing: 0.01rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.02rem;
   opacity: 0.7;
   text-transform: capitalize;
 }
@@ -21,22 +21,21 @@
 .position-roles {
   margin-top: 1rem;
   display: grid;
-  gap: 1.4rem;
+  gap: 1.2rem;
 }
 
 .role {
-  line-height: 1.4;
-  font-size: 0.9rem;
+  line-height: 1.3;
+  font-size: 1.05rem;
   display: flex;
   gap: 1.5rem;
-  font-weight: 400;
   opacity: 0.9;
 }
 
 @media (min-width: 480px) {
   .role {
     line-height: 1.5;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     gap: 1.3rem;
   }
 }
@@ -47,7 +46,7 @@
   }
 
   .position-period {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .position-roles {
@@ -58,5 +57,19 @@
 
   .role {
     gap: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .position-title {
+    font-size: 1.6rem;
+  }
+
+  .position-period {
+    font-size: 1.1rem;
+  }
+
+  .role {
+    font-size: 1.2rem;
   }
 }

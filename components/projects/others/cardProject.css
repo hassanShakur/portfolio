@@ -1,6 +1,6 @@
 .project-card {
   background-color: #112240;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem;
   border-radius: 8px;
 }
 
@@ -13,7 +13,7 @@
 
 .card-info h4 {
   text-transform: capitalize;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin-bottom: 1.2rem;
   margin-top: 0.6rem;
 }
@@ -26,7 +26,11 @@
   text-transform: capitalize;
   opacity: 0.9;
   margin-top: 2rem;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
+}
+
+.card-tech span {
+  margin-right: 0.5rem;
 }
 
 .folder {
@@ -54,7 +58,7 @@
 
 @media (min-width: 480px) {
   .project-card {
-    padding: 2rem;
+    padding: 2rem 1.5rem;
   }
 
   .card-header {
@@ -62,16 +66,16 @@
   }
 
   .card-info h4 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-bottom: 1.4rem;
   }
 
   .card-info .card-summary {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   .card-info .card-tech {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
   }
 
   .links {

@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section id='hero'>
       <div className='hero-text'>
-        <h3 className='intro clg'>Hi, my name is</h3>
+        <h3 className='intro clg text-mono'>Hi, my name is</h3>
         <h1 className='name'>Hassan Shakur.</h1>
 
         <div className='title'>A software engineer.</div>

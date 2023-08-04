@@ -57,29 +57,30 @@ const Footer = () => {
         <div id='social-line'></div>
       </div>
       <div id='email'>
-        <Link href={'mailto:dev.hassanshakur@gmail.com'}>
+        <Link
+          href={'mailto:dev.hassanshakur@gmail.com'}
+          className='text-mono'
+        >
           dev.hassanshakur@gmail.com
         </Link>
         <div id='email-line'></div>
       </div>
-      <p className='attribution text'>
-        Designed &amp; Built by{' '}
+      <p className='attribution text text-mono'>
         <Link
           href={'https://github.com/hassanShakur'}
           target='_blank'
-          className='clg'
+          className='text-mono'
         >
-          Hassan Shakur
+          Designed &amp; Built by Hassan Shakur
         </Link>
         .
         <br />
-        Original Design by{' '}
         <Link
           href={'https://github.com/bchiang7'}
           target='_blank'
-          className='clg'
+          className='text-mono'
         >
-          Brittany Chiang
+          Original Design by Brittany Chiang
         </Link>
         .
       </p>

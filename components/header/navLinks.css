@@ -23,14 +23,14 @@ li a .number {
     height: unset;
     padding: unset;
     display: flex;
-    gap: 1.8rem;
+    gap: 2rem;
     margin-bottom: 0;
   }
 
   li a {
     display: flex;
     gap: 0.5rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   nav button {

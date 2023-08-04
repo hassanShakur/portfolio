@@ -17,7 +17,7 @@
 
 .project-info #badge {
   text-transform: capitalize;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   color: rgb(var(--foreground-light-green));
 }
 
@@ -30,29 +30,31 @@
 }
 
 .project-info {
-  padding-bottom: 1rem;
-  padding: 1.6rem 1rem;
+  padding: 1.6rem 1.3rem;
 }
 
 .project-info h3 {
   text-transform: capitalize;
-  font-size: 1.2rem;
-  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.4rem;
   margin-top: 0.6rem;
 }
 
 .project-info .project-description {
   opacity: 0.8;
-  font-size: 0.8rem;
-  line-height: 1.7;
+  line-height: 1.5;
   margin-top: 1.6rem;
 }
 
 .project-info .project-tech {
   text-transform: capitalize;
   opacity: 0.95;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   margin-top: 2rem;
+}
+
+.project-tech span {
+  margin-right: 0.5rem;
 }
 
 .project-actions {
@@ -81,13 +83,17 @@
     padding: 1.4rem 2rem;
   }
 
+  .project-info h3 {
+    font-size: 1.6rem;
+  }
+
   .project-info .project-description {
     opacity: 0.9;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   .project-info .project-tech {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 
@@ -101,11 +107,11 @@
   }
 
   .project:nth-child(even) .project-img {
-    grid-column: 4 / 6;
+    grid-column: 4 / 8;
   }
 
   .project:nth-child(odd) .project-img {
-    grid-column: 1 / 3;
+    grid-column: 1 / 5;
   }
 
   .project-img > * {
@@ -125,11 +131,11 @@
   }
 
   .project:nth-child(even) .project-info {
-    grid-column: 1 / 5;
+    grid-column: 1 / 6;
   }
 
   .project:nth-child(odd) .project-info {
-    grid-column: 2 / 6;
+    grid-column: 3 / 8;
     text-align: right;
   }
 
@@ -138,15 +144,20 @@
     width: fit-content;
   }
 
+  .project-info h3 {
+    font-size: 1.8rem;
+  }
+
   .project-info .project-description {
     background-color: #112240;
     padding: 1.5rem;
     border-radius: 5px;
-    font-size: 0.8rem;
+    font-size: 1.1rem;
+    opacity: 1;
   }
 
   .project-info .project-tech {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .project-actions {

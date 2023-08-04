@@ -17,7 +17,7 @@
 }
 
 .companies li {
-  padding: 0.8rem 0;
+  padding: 0.8rem 0 0.6rem;
   min-width: 7rem;
   text-align: center;
   cursor: pointer;
@@ -80,5 +80,11 @@ li.active:hover {
   li.active {
     border-bottom: none;
     border-left: 3px solid rgb(var(--foreground-light-green));
+  }
+}
+
+@media (min-width: 768px) {
+  .companies {
+    font-size: 1rem;
   }
 }

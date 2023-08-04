@@ -12,7 +12,11 @@ const CompanyTabs = () => {
         {positions.map((position) => (
           <li
             key={position.id}
-            className={activeTab === position.id ? 'active' : ''}
+            className={
+              activeTab === position.id
+                ? 'text-mono active'
+                : 'text-mono'
+            }
             onClick={() => setActiveTab(position.id)}
           >
             {position.company}

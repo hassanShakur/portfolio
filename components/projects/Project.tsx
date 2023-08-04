@@ -16,13 +16,19 @@ const Project = ({ project }: { project: ProjectProps }) => {
       </Link>
 
       <div className='project-info'>
-        <span id='badge'>{project.badge}</span>
+        <span id='badge' className='text-mono'>
+          {project.badge}
+        </span>
         <Link href={project.live}>
           <h3>{project.name}</h3>
         </Link>
         <p className='project-description text'>{project.summary}</p>
         <p className='project-tech text'>
-          {project.techs.map((tech) => `${tech.name} `)}
+          {project.techs.map((tech) => (
+            <span key={tech.id} className='text-mono'>
+              {tech.name}{' '}
+            </span>
+          ))}
         </p>
 
         <div className='project-actions'>

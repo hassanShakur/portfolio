@@ -2,35 +2,34 @@
   display: flex;
   flex-direction: column;
   height: 80vh;
-  gap: 5rem;
+  gap: 3rem;
   padding: 1rem 0;
 }
 
 .intro {
-  font-size: 1rem;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
 }
 
 .name {
-  font-size: 1.8rem;
+  font-size: 2.6rem;
   letter-spacing: 1px;
   font-weight: 500;
-  margin: 0.5rem 0;
 }
 
 .title {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
-  text-transform: capitalize;
 }
 
 .description {
-  max-width: 650px;
+  max-width: 580px;
 }
 
 @media (min-width: 480px) {
   #hero {
     gap: 3rem;
-    padding: 1rem 0;
+    padding: 0;
   }
 
   .intro {
@@ -38,29 +37,37 @@
   }
 
   .name {
-    font-size: 7vw;
-    margin: 0.6rem 0;
+    font-size: 8.5vw;
   }
 
   .title {
-    font-size: 5vw;
+    font-size: 7.5vw;
     margin-bottom: 2rem;
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
   #hero {
     gap: 3rem;
-    padding: 1rem 0;
   }
 
   .intro {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+  }
+
+  .title {
+    font-size: 7vw;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .intro {
+    font-size: 1.4rem;
   }
 
   .name {
-    font-size: 4.5rem;
-    margin: 0.6rem 0;
+    font-size: 5rem;
   }
 
   .title {

@@ -19,13 +19,13 @@ h2 .line {
 
 #about-img {
   width: 100%;
-  min-width: 200px;
-  max-width: 300px;
+  min-width: 150px;
+  max-width: 70%;
   position: relative;
 }
 
 #about-img img {
-  filter: sepia() grayscale();
+  filter: sepia(80%) hue-rotate(100deg);
 }
 
 #about-img #outline {
@@ -54,6 +54,11 @@ h2 .line {
   #about {
     flex-direction: row;
     align-items: flex-start;
+  }
+
+  #about-img {
+    min-width: 200px;
+    max-width: 300px;
   }
 
   #about-img {

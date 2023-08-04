@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <section id='contact'>
       <div className='contact-title'>
-        <h6 className='clg'>where to now?</h6>
+        <h6 className='clg text-mono'>where to now?</h6>
         <h3>get in touch</h3>
       </div>
 

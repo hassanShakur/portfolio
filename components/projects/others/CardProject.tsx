@@ -28,7 +28,11 @@ const CardProject = ({ project }: { project: CardProjectProps }) => {
         <h4>{project.name}</h4>
         <p className='card-summary text'>{project.summary}</p>
         <p className='card-tech text'>
-          {project.techs.map((tech) => `${tech.name} `)}
+          {project.techs.map((tech) => (
+            <span key={tech.id} className='text-mono'>
+              {tech.name}{' '}
+            </span>
+          ))}
         </p>
       </div>
     </div>

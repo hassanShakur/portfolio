@@ -1,5 +1,5 @@
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   text-transform: capitalize;
@@ -12,5 +12,13 @@ h2 {
     font-size: 1.5rem;
     gap: 2vw;
     margin-bottom: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2rem;
+    gap: 2vw;
+    margin-bottom: 3rem;
   }
 }
