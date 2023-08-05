@@ -88,3 +88,9 @@ li.active:hover {
     font-size: 1rem;
   }
 }
+
+@media (min-width: 1080px) {
+  .companies {
+    font-size: 0.8rem;
+  }
+}

@@ -4,6 +4,10 @@
   gap: 0.6rem;
 }
 
+.sticks:hover {
+  cursor: pointer;
+}
+
 .sticks > * {
   height: 2px;
   width: 8px;

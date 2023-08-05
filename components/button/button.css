@@ -11,7 +11,7 @@ button {
 }
 
 button:hover {
-  transform: translate(-3px, -3px);
-  box-shadow: 3px 3px 1px 1px rgb(var(--foreground-light-green));
+  transform: translate(-5px, -5px);
+  box-shadow: 4px 4px 0px 0px rgb(var(--foreground-light-green));
   cursor: pointer;
 }

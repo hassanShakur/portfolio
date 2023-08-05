@@ -22,9 +22,27 @@
   }
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 768px) {
+  .other-projects {
+    margin-top: 6rem;
+  }
+
+  .other-projects h3 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1200px) {
   .other-projects .cards {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+  }
+
+  .other-projects {
+    margin-top: 10rem;
+  }
+
+  .other-projects h3 {
+    font-size: 1.8rem;
   }
 }

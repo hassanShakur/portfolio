@@ -38,3 +38,13 @@
     line-height: 1.5;
   }
 }
+
+@media (min-width: 1200px) {
+  .contact-title h3 {
+    font-size: 3rem;
+  }
+
+  #contact .contact-text {
+    font-size: 1.2rem;
+  }
+}

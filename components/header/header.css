@@ -75,6 +75,6 @@ body:has(.menu-open) {
 
 @media (min-width: 1080px) {
   header {
-    padding: 1rem 3rem;
+    padding: 1rem 1.5rem;
   }
 }

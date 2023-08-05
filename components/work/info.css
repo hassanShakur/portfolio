@@ -73,3 +73,17 @@
     font-size: 1.2rem;
   }
 }
+
+@media (min-width: 1080px) {
+  .position-title {
+    font-size: 1.5rem;
+  }
+
+  .position-period {
+    font-size: 0.9rem;
+  }
+
+  .role {
+    font-size: 1.1rem;
+  }
+}

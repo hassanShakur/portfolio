@@ -27,6 +27,10 @@ footer .attribution {
   line-height: 1.8;
 }
 
+footer a:hover::after {
+  content: none;
+}
+
 @media (min-width: 768px) {
   footer {
     margin-bottom: 0;
@@ -83,11 +87,14 @@ footer .attribution {
 @media (min-width: 1080px) {
   .social-icons {
     left: 3rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    gap: 1rem;
+    opacity: 0.85;
   }
 
   #email {
     right: 3rem;
+    font-size: 0.9rem;
   }
 
   #email-line {
@@ -96,5 +103,9 @@ footer .attribution {
 
   #social-line {
     height: 12vh;
+  }
+
+  footer .attribution {
+    font-size: 0.7rem;
   }
 }

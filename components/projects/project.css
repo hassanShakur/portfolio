@@ -117,7 +117,7 @@
   .project-img > * {
     width: inherit;
     height: auto;
-    filter: sepia();
+    filter: sepia(80%) hue-rotate(100deg);
     transition: all 0.3s ease-in-out;
   }
 
@@ -166,14 +166,6 @@
 }
 
 @media (min-width: 1080px) {
-  .project-info #badge {
-    font-size: 0.8rem;
-  }
-
-  .project-info h3 {
-    font-size: 1.5rem;
-  }
-
   .project:nth-child(even) .project-img {
     grid-column: 5 / 11;
   }
@@ -190,11 +182,11 @@
     grid-column: 5 / 11;
   }
 
-  .project-info .project-tech {
-    width: 75%;
-  }
-
   .project:nth-child(odd) .project-tech {
     margin-left: auto;
+  }
+
+  .project-info .project-tech {
+    font-size: 0.8rem;
   }
 }

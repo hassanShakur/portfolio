@@ -29,7 +29,7 @@
 @media (min-width: 480px) {
   #hero {
     gap: 3rem;
-    padding: 0;
+    padding-top: 2rem;
   }
 
   .intro {
@@ -62,16 +62,21 @@
 }
 
 @media (min-width: 1000px) {
+  #hero {
+    padding-top: 0;
+  }
+
   .intro {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
 
   .name {
-    font-size: 5rem;
+    font-size: 5.5rem;
   }
 
   .title {
-    font-size: 3.5rem;
+    font-size: 4rem;
     margin-bottom: 2rem;
+    margin-top: -0.7rem;
   }
 }
