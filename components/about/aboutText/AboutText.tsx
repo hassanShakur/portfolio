@@ -1,12 +1,30 @@
+'use client';
+import useShuffle from '@/helpers/useShuffle';
+const wan = (
+  <p>
+    Nǐ Háo! - That&apos;s hello in Chinese 😀. I&apos;m Hassan - at
+    least that&apos;s what I was told. A couple of years ago in early
+    2016, I wrote my first Hello World program in a High School
+    Computer class.
+  </p>
+);
+
+// const textList = [
+//   {id: 1, content: }
+// ]
+import { useEffect } from 'react';
+// wan.key?.toLocaleString()
 const AboutText = () => {
+  const { ref, text } = useShuffle({
+    shuffleText: wan.props?.children,
+  });
+  
+
   return (
     <>
       {/* Use an icon from Angela Yu  */}
-      <p className='text'>
-        Nǐ Háo! - That&apos;s hello in Chinese 😀. I&apos;m Hassan -
-        at least that&apos;s what I was told. A couple of years ago in
-        early 2016, I wrote my first Hello World program in a High
-        School Computer class.
+      <p className='text' ref={ref}>
+        {text}
       </p>
       <p className='text'>
         3 years later, I was drowning in a passion for programming as

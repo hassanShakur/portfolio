@@ -3,6 +3,7 @@ import { StaticImageData } from 'next/image';
 export type Store = { menu: { isOpen: boolean } };
 export type BtnProps = { text: string };
 export type SectionTitleProps = { number: number; title: string };
+
 export type ProjectProps = {
   id: number;
   name: string;
@@ -16,6 +17,7 @@ export type ProjectProps = {
   }[];
   summary: string;
 };
+
 export type CardProjectProps = {
   id: number;
   name: string;

@@ -6,6 +6,7 @@ import './header.css';
 import { Store } from '@/types/appTypes';
 import Navbar from './Navbar';
 import { menuActions } from '@/redux/app/menuSlice';
+import { Fade } from 'react-awesome-reveal';
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -14,14 +15,17 @@ const Header = () => {
   return (
     <>
       <header>
-        <div className='nav-pane'>
-          <div className='logo'>H</div>
-          <Sticks />
-        </div>
+        <Fade direction='down' cascade duration={500} triggerOnce>
+          <div className='nav-pane'>
+            <div className='logo'>H</div>
+            <Sticks />
+          </div>
+        </Fade>
         <nav className={isOpen ? 'menu-open' : ''}>
           <Navbar />
         </nav>
       </header>
+
       {isOpen && (
         <div
           className='backdrop'

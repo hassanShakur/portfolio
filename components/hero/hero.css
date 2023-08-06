@@ -6,6 +6,12 @@
   padding: 1rem 0;
 }
 
+.intro,
+.name,
+.title {
+  font-weight: 500;
+}
+
 .intro {
   font-size: 0.8rem;
   margin-bottom: 1rem;
@@ -14,7 +20,6 @@
 .name {
   font-size: 2.6rem;
   letter-spacing: 1px;
-  font-weight: 500;
 }
 
 .title {

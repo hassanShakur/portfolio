@@ -1,70 +1,13 @@
-import { TbBrandGithub } from 'react-icons/tb';
-import {
-  FaLinkedinIn,
-  FaTwitter,
-  FaAngellist,
-  FaMediumM,
-} from 'react-icons/fa';
 import './footer.css';
 import Link from 'next/link';
-
-export const footerIcons = [
-  {
-    id: 1,
-    name: 'GitHub',
-    icon: <TbBrandGithub />,
-    href: 'https://github.com/hassanShakur',
-  },
-  {
-    id: 2,
-    name: 'LinkedIn',
-    icon: <FaLinkedinIn />,
-    href: 'https://www.linkedin.com/in/hassanShakur',
-  },
-  {
-    id: 3,
-    name: 'Twitter',
-    icon: <FaTwitter />,
-    href: 'https://twitter.com/HassShakur',
-  },
-  {
-    id: 4,
-    name: 'WellFound',
-    icon: <FaAngellist />,
-    href: 'https://wellfound.com/u/hassanshakur',
-  },
-  {
-    id: 5,
-    name: 'Medium',
-    icon: <FaMediumM />,
-    href: 'https://medium.com/@hassanShakur',
-  },
-];
+import SocialIcons from './SocialIcons';
+import SocialEmail from './SocialEmail';
 
 const Footer = () => {
   return (
     <footer>
-      <div className='social-icons'>
-        {footerIcons.map((platform) => (
-          <Link
-            key={platform.id}
-            href={platform.href}
-            target='_blank'
-          >
-            {platform.icon}
-          </Link>
-        ))}
-        <div id='social-line'></div>
-      </div>
-      <div id='email'>
-        <Link
-          href={'mailto:dev.hassanshakur@gmail.com'}
-          className='text-mono'
-        >
-          dev.hassanshakur@gmail.com
-        </Link>
-        <div id='email-line'></div>
-      </div>
+      <SocialIcons />
+      <SocialEmail />
       <p className='attribution text text-mono'>
         <Link
           href={'https://github.com/hassanShakur'}

@@ -1,5 +1,6 @@
+// 'use client'
 import SectionTitle from '../sectionTitle';
-import AboutText from './AboutText';
+import AboutText from './aboutText/AboutText';
 import TechStack from './TechStack';
 import myPortrait from '@/images/hassan-shakur.jpg';
 import './about.css';
@@ -14,15 +15,15 @@ const About = () => {
         <TechStack />
       </div>
       <div id='about-img'>
-        <div id="outline"></div>
-        <div id="front-drop"></div>
+        <div id='outline'></div>
+        <div id='front-drop'></div>
         <Image
           src={myPortrait}
           placeholder='blur'
           priority
           style={{
             width: '100%',
-            height: 'auto'
+            height: 'auto',
           }}
           alt='A portrait of Hassan Shakur'
         />
