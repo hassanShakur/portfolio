@@ -45,9 +45,11 @@ const Hero = () => {
           </p>
         </Fade>
       </div>
-      <div className='hero-actions'>
-        <Button text='say hello ✅!' />
-      </div>
+      <Fade direction='up' delay={1800} triggerOnce>
+        <div className='hero-actions'>
+          <Button text='say hello ✅!' />
+        </div>
+      </Fade>
     </section>
   );
 };

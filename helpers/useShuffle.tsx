@@ -13,8 +13,8 @@ const useShuffle = ({
 }) => {
   const [text, setText] = useState(shuffleText);
 
-  const { ref, inView, entry } = useInView({
-    threshold: 1,
+  const { ref, inView } = useInView({
+    threshold: 0.2,
     triggerOnce: true,
     delay,
   });
@@ -37,8 +37,8 @@ const useShuffle = ({
 
       if (iteration >= shuffleText.length) clearInterval(interval);
 
-      iteration += shuffleText.length / 40;
-    }, 10);
+      iteration += shuffleText.length / 50;
+    }, 40);
   }, [inView, shuffleText]);
   return { ref, inView, text };
 };

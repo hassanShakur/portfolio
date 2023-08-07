@@ -1,22 +1,21 @@
+'use client';
 import Link from 'next/link';
 import Button from '../button';
 import './contact.css';
+import ContactText from './ContactText';
+import { Fade } from 'react-awesome-reveal';
 
 const Contact = () => {
   return (
     <section id='contact'>
       <div className='contact-title'>
-        <h6 className='clg text-mono'>where to now?</h6>
-        <h3>get in touch</h3>
+        <Fade direction='up' cascade fraction={0.5} triggerOnce>
+          <h6 className='clg text-mono'>where to now?</h6>
+          <h3>get in touch</h3>
+        </Fade>
       </div>
 
-      <p className='contact-text text'>
-        I&apos;m open to any new opportunities. Leave me a message in
-        my inbox and I will get back to you. Whether it&apos;s a
-        position, project, collaborations or just wanna say{' '}
-        <span className='clg'>Hi</span>, I&apos;ll be happy to hear
-        from <span className='clg'>you</span>!
-      </p>
+      <ContactText />
 
       <div className='contact-actions'>
         <Link href={'mailto:dev.hassanshakur@gmail.com'}>
