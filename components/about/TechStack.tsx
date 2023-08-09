@@ -6,7 +6,7 @@ import { Fade } from 'react-awesome-reveal';
 const TechStack = () => {
   return (
     <>
-      <Fade direction='up' fraction={0.3} triggerOnce>
+      <Fade direction='up' fraction={1} triggerOnce>
         <p className='text'>
           Below are some of the technologies I have interacted with:
         </p>

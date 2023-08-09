@@ -1,8 +1,8 @@
-'use client'
+'use client';
 import { otherProjects } from '@/helpers/utils';
 import CardProject from './CardProject';
 import './otherProjects.css';
-import { Slide } from 'react-awesome-reveal';
+import { Slide, Fade, Zoom } from 'react-awesome-reveal';
 
 const OtherProjects = () => {
   return (
@@ -11,9 +11,17 @@ const OtherProjects = () => {
         <h3>other noteworthy projects</h3>
       </Slide>
       <div className='cards'>
-        {otherProjects.map((card) => (
-          <CardProject key={card.id} project={card} />
-        ))}
+        <Fade
+          direction='up'
+          cascade
+          triggerOnce
+          // duration={800}
+          damping={0.2}
+        >
+          {otherProjects.map((card) => (
+            <CardProject key={card.id} project={card} />
+          ))}
+        </Fade>
       </div>
     </div>
   );

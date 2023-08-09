@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <section id='contact'>
       <div className='contact-title'>
-        <Fade direction='up' cascade fraction={0.5} triggerOnce>
+        <Fade direction='up' cascade triggerOnce>
           <h6 className='clg text-mono'>where to now?</h6>
           <h3>get in touch</h3>
         </Fade>
@@ -17,11 +17,13 @@ const Contact = () => {
 
       <ContactText />
 
-      <div className='contact-actions'>
-        <Link href={'mailto:dev.hassanshakur@gmail.com'}>
-          <Button text='say hello' />
-        </Link>
-      </div>
+      <Fade direction='up' delay={2000} cascade triggerOnce>
+        <div className='contact-actions'>
+          <Link href={'mailto:dev.hassanshakur@gmail.com'}>
+            <Button text='say hello' />
+          </Link>
+        </div>
+      </Fade>
     </section>
   );
 };

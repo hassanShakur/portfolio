@@ -20,7 +20,7 @@
 
 @media (min-width: 1080px) {
   .projects {
-    gap: 4rem;
+    gap: 8rem;
   }
 
   .project {

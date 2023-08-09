@@ -6,7 +6,7 @@ const letters = 'abcdefghijklmnopqrstuvwxyz';
 
 const useShuffle = ({
   shuffleText,
-  delay = 0,
+  delay = 600,
 }: {
   shuffleText: string;
   delay?: number;
@@ -14,7 +14,7 @@ const useShuffle = ({
   const [text, setText] = useState(shuffleText);
 
   const { ref, inView } = useInView({
-    threshold: 0.2,
+    threshold: 0.8,
     triggerOnce: true,
     delay,
   });

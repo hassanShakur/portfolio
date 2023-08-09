@@ -7,6 +7,7 @@ import {
   FaMediumM,
 } from 'react-icons/fa';
 import { Fade } from 'react-awesome-reveal';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 export const footerIcons = [
   {
@@ -41,27 +42,34 @@ export const footerIcons = [
   },
 ];
 const SocialIcons = () => {
+  const [show, setShow] = useState({
+    transform: 'translateX(-20px)',
+    opacity: '0',
+  });
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShow({
+      transform: 'translateX(0)',
+      opacity: 'inherit',
+    });
+    }, 2000);
+    
+  }, []);
+
   return (
-    <div className='social-icons'>
-      <Fade
-        direction='left'
-        cascade
-        duration={300}
-        damping={0.5}
-        delay={2000}
-        triggerOnce
-      >
-        {footerIcons.map((platform) => (
-          <Link
-            key={platform.id}
-            href={platform.href}
-            target='_blank'
-          >
-            {platform.icon}
-          </Link>
-        ))}
-        <div id='social-line'></div>
-      </Fade>
+    <div className='social-icons' style={show}>
+      {footerIcons.map((platform) => (
+        <Link
+          id='some'
+          key={platform.id}
+          href={platform.href}
+          target='_blank'
+        >
+          {platform.icon}
+        </Link>
+      ))}
+      <div id='social-line'></div>
     </div>
   );
 };
