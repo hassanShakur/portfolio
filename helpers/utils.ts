@@ -1,4 +1,7 @@
 import projectImg from '@/images/hack-3.jpg';
+import resipisImg from '@/images/resipis.png';
+import bankifyImg from '@/images/bankify.png';
+import burgersImg from '@/images/burgers.png';
 
 export const navLinks = [
   { id: 1, name: 'about', href: '#about' },
@@ -111,16 +114,16 @@ export const positions = [
 export const projects = [
   {
     id: 1,
-    name: 'chrome browser',
-    badge: 'javaScript based',
-    image: projectImg,
+    name: 'resipis app',
+    badge: 'react based',
+    image: resipisImg,
     github: 'https://github.com/hassanShakur',
     live: 'https://github.com/hassanShakur',
     techs: [
-      { id: 1, name: 'typeScript' },
-      { id: 2, name: 'react' },
-      { id: 3, name: 'styled components' },
-      { id: 4, name: 'node' },
+      { id: 1, name: 'react' },
+      { id: 2, name: 'javaScript' },
+      { id: 3, name: 'express' },
+      { id: 4, name: 'material UI' },
       { id: 5, name: 'mongoose' },
     ],
     summary:
@@ -128,32 +131,30 @@ export const projects = [
   },
   {
     id: 2,
-    name: 'desktop cache',
-    badge: 'react based',
-    image: projectImg,
+    name: 'bankify website',
+    badge: 'javaScript based',
+    image: bankifyImg,
     github: 'https://github.com/hassanShakur',
     live: 'https://github.com/hassanShakur',
     techs: [
-      { id: 1, name: 'typeScript' },
-      { id: 2, name: 'react' },
-      { id: 3, name: 'styled components' },
-      { id: 4, name: 'node' },
-      { id: 5, name: 'mongoose' },
+      { id: 1, name: 'javaScript' },
+      { id: 2, name: 'SCSS' },
+      { id: 4, name: 'UI design' },
     ],
     summary:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nihil accusantium, quod et quam facere odio. Accusamus, eum? Repudiandae, quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, facere.',
   },
   {
     id: 3,
-    name: 'capstone project',
-    badge: 'typeScript based',
-    image: projectImg,
+    name: 'the burgers',
+    badge: 'javaScript based',
+    image: burgersImg,
     github: 'https://github.com/hassanShakur',
     live: 'https://github.com/hassanShakur',
     techs: [
-      { id: 1, name: 'typeScript' },
-      { id: 2, name: 'react' },
-      { id: 3, name: 'styled components' },
+      { id: 1, name: 'javaScript' },
+      { id: 2, name: 'express' },
+      { id: 3, name: 'webpack' },
       { id: 4, name: 'node' },
       { id: 5, name: 'mongoose' },
     ],
