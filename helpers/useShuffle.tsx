@@ -1,8 +1,7 @@
 'use client';
 import { useInView } from 'react-intersection-observer';
 import { useEffect, useState } from 'react';
-
-const letters = 'abcdefghijklmnopqrstuvwxyz';
+import shuffler from './shuffle';
 
 const useShuffle = ({
   shuffleText,
@@ -20,25 +19,8 @@ const useShuffle = ({
   });
 
   useEffect(() => {
-    let iteration = 0;
     if (!inView) return;
-
-    const interval = setInterval(() => {
-      setText((prev) =>
-        prev
-          .split('')
-          .map((letter, index) => {
-            if (index < iteration) return shuffleText[index];
-            if (letter === ' ') return ' ';
-            return letters[Math.floor(Math.random() * 26)];
-          })
-          .join('')
-      );
-
-      if (iteration >= shuffleText.length) clearInterval(interval);
-
-      iteration += shuffleText.length / 50;
-    }, 40);
+    shuffler(setText, shuffleText);
   }, [inView, shuffleText]);
   return { ref, inView, text };
 };

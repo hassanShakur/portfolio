@@ -1,9 +1,16 @@
+
+@font-face {
+  font-family: 'mono';
+  src: url(../../fonts/sf-mono/SFMonoLight.otf);
+}
+
 nav ul {
   height: fit-content;
   padding: 2rem;
   display: grid;
   gap: 2rem;
   margin-bottom: -30%;
+  font-family: mono;
 }
 
 li a {

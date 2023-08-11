@@ -4,49 +4,23 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { TbBrandGithub, TbLink } from 'react-icons/tb';
 import './project.css';
-import { Fade, Slide } from 'react-awesome-reveal';
-import { useInView } from 'react-intersection-observer';
-import { useEffect, useState } from 'react';
+import { Slide } from 'react-awesome-reveal';
 
 const Project = ({ project }: { project: ProjectProps }) => {
-  const { ref, inView } = useInView({
-    threshold: 0.2,
-    triggerOnce: true,
-  });
-
-  const [show, setShow] = useState({
-    transform: 'translateY(40px)',
-    opacity: 0,
-  });
-
-  useEffect(() => {
-    if (!inView) return;
-    setShow({
-      transform: 'translateY(0)',
-      opacity: 1,
-    });
-  }, [inView]);
-
   return (
     <div className='project'>
       <Link href={project.live} className='project-img'>
-        {/* <Fade direction='up' cascade fraction={0.1} triggerOnce>
-          <div> */}
         <Image
           src={project.image}
           alt={project.name}
           placeholder='blur'
-          ref={ref}
           style={{
             borderRadius: '8px',
             objectFit: 'cover',
             width: '100%',
             height: '100%',
-            ...show
           }}
         />
-        {/* </div>
-        </Fade> */}
       </Link>
 
       <div className='project-info'>
