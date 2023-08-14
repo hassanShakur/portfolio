@@ -24,19 +24,19 @@ export const techStack = [
 export const positions = [
   {
     id: 1,
-    company: 'apple',
-    title: 'web developer',
-    period: 'april - december 2017',
+    company: 'microverse',
+    title: 'mentor & web developer',
+    period: 'april 2023 - present',
     roles: [
       {
         id: 1,
         description:
-          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, excepturi possimus fugiat odio delectus consequuntur ea? Dicta assumenda.',
+          "Performed 200+ code reviews of peers’ projects developed using languages and tech like React, Redux, Ruby, Rails, and JavaScript.",
       },
       {
         id: 2,
         description:
-          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, excepturi possimus fugiat odio delectus consequuntur ea? Dicta assumenda.',
+          "Mentored 3 junior web developers, providing technical development support in their web development journey.",
       },
     ],
   },

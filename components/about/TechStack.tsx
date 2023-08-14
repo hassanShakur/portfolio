@@ -11,13 +11,13 @@ const TechStack = () => {
           Below are some of the technologies I have interacted with:
         </p>
       </Fade>
-      <Fade
+      {/* <Fade
         direction='up'
         duration={600}
         damping={0.2}
         cascade
         triggerOnce
-      >
+      > */}
         <ul>
           {techStack.map((tech) => (
             <li key={tech.id}>
@@ -26,7 +26,7 @@ const TechStack = () => {
             </li>
           ))}
         </ul>
-      </Fade>
+      {/* </Fade> */}
     </>
   );
 };
