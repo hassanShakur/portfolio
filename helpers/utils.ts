@@ -13,8 +13,8 @@ export const navLinks = [
 export const techStack = [
   { id: 1, name: 'JavaScript (es6)' },
   { id: 2, name: 'TypeScript' },
-  { id: 3, name: 'NextJS' },
-  { id: 4, name: 'NodeJS' },
+  { id: 3, name: 'Next.JS' },
+  { id: 4, name: 'Node.JS' },
   { id: 5, name: 'React' },
   { id: 6, name: 'Python' },
   { id: 7, name: 'Ruby' },
@@ -31,25 +31,35 @@ export const positions = [
       {
         id: 1,
         description:
-          "Performed 200+ code reviews of peers’ projects developed using languages and tech like React, Redux, Ruby, Rails, and JavaScript.",
+          'Performed 200+ code reviews of peers’ projects developed using languages and tech like React, Redux, Ruby, Rails, and JavaScript.',
       },
       {
         id: 2,
         description:
-          "Mentored 3 junior web developers, providing technical development support in their web development journey.",
+          'Mentored 3 junior web developers, providing technical development support in their web development journey.',
+      },
+      {
+        id: 3,
+        description:
+          'Spent 1300+ hours mastering algorithms, data structures, and full-stack development while simultaneously developing projects with Ruby, Rails, JavaScript, React, and state management with Redux.',
+      },
+      {
+        id: 4,
+        description:
+          'Developed skills in remote pair programming using GitHub, industry standard git-flow, and daily standups to communicate and collaborate with international remote developers',
       },
     ],
   },
   {
     id: 2,
-    company: 'google',
-    title: 'backend engineer',
-    period: 'january - june 2020',
+    company: 'freelancer',
+    title: 'full-stack engineer',
+    period: 'january 2022 - march 2023',
     roles: [
       {
         id: 1,
         description:
-          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, excepturi possimus fugiat odio delectus consequuntur ea? Dicta assumenda.',
+          'Developed production ready backend microservices using Rails, SQL, Node.js, Express framework and databases like MongoDB and Postgres.',
       },
       {
         id: 2,
@@ -127,7 +137,7 @@ export const projects = [
       { id: 5, name: 'mongoose' },
     ],
     summary:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nihil accusantium, quod et quam facere odio. Accusamus, eum? Repudiandae, quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, facere.',
+      'A recipe management web app. View suggestions, search for recipes, filter by category, profile management for saving & bookmarking favourite recipes for future exploration.',
   },
   {
     id: 2,
@@ -142,7 +152,7 @@ export const projects = [
       { id: 4, name: 'UI design' },
     ],
     summary:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nihil accusantium, quod et quam facere odio. Accusamus, eum? Repudiandae, quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, facere.',
+      'Be able to visualize transactions modelled as simple JavaScript arrays. I built this while learning JavaScript & the project combines some of the most crucial concept in the language.',
   },
   {
     id: 3,
@@ -159,7 +169,7 @@ export const projects = [
       { id: 5, name: 'mongoose' },
     ],
     summary:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nihil accusantium, quod et quam facere odio. Accusamus, eum? Repudiandae, quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, facere.',
+      'Built as a clone with reference to the burger king website. A full-stack side project for visualizing different available snacks in a smooth & appealing interface.',
   },
 ];
 

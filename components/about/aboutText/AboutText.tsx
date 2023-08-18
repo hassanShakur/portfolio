@@ -7,7 +7,7 @@ const AboutText = () => {
       <Fade direction='up' fraction={0.2} triggerOnce>
         {/* Use an icon from Angela Yu  */}
         <p className='text'>
-          Nǐ Háo! - That&apos;s hello in Chinese 😀. I&apos;m Hassan -
+          Nǐ Háo! I&apos;m Hassan -
           at least that&apos;s what I was told. A couple of years ago
           in early 2016, I wrote my first Hello World program in a
           High School Computer class.

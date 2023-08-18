@@ -2,16 +2,11 @@
 import Link from 'next/link';
 import Button from '../button';
 import './hero.css';
-import useShuffle from '@/helpers/useShuffle';
 import { Fade } from 'react-awesome-reveal';
 
 const myName = 'Hassan Shakur.';
 
 const Hero = () => {
-  // const { ref, text: name } = useShuffle({
-  //   shuffleText: myName,
-  //   delay: 10000,
-  // });
 
   return (
     <section id='hero'>
@@ -47,7 +42,7 @@ const Hero = () => {
       </div>
       <Fade direction='up' delay={1800} triggerOnce>
         <div className='hero-actions'>
-          <Button text='say hello ✅!' />
+          <Button text='say hello!' />
         </div>
       </Fade>
     </section>
