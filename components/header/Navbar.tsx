@@ -5,9 +5,10 @@ import Button from '../button';
 import { useDispatch } from 'react-redux';
 import { menuActions } from '@/redux/app/menuSlice';
 import { Fade } from 'react-awesome-reveal';
+import Resume from './Resume';
 
 const Navbar = () => {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   return (
     <>
@@ -41,7 +42,7 @@ const Navbar = () => {
         delay={800}
         triggerOnce
       >
-        <Button text='resume' />
+        <Resume />
       </Fade>
     </>
   );
