@@ -218,7 +218,7 @@ export const otherProjects = [
 
 export const certifications = [
   {
-    id: 1,
+    id: 0,
     origin: 'Google',
     mainCert: projectImg,
     summary:
@@ -252,7 +252,7 @@ export const certifications = [
     ],
   },
   {
-    id: 2,
+    id: 1,
     origin: 'Pluralsight',
     mainCert: projectImg,
     summary:
@@ -286,7 +286,7 @@ export const certifications = [
     ],
   },
   {
-    id: 3,
+    id: 2,
     origin: 'Coursera',
     mainCert: projectImg,
     summary:

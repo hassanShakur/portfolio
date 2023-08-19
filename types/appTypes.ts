@@ -1,6 +1,18 @@
 import { StaticImageData } from 'next/image';
 
-export type Store = { menu: { isOpen: boolean } };
+export type ReduxStoreType = {
+  menu: {
+    isOpen: boolean;
+  };
+  cert: {
+    activeCert: number;
+  };
+  gallery: {
+    isOpen: boolean;
+    activeImg: number;
+  };
+};
+
 export type BtnProps = { text: string };
 export type SectionTitleProps = { number: number; title: string };
 

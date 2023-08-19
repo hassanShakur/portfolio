@@ -1,27 +1,47 @@
 #study {
   margin-top: 1rem;
   padding-top: 1rem;
-  max-width: 1360px;
+  max-width: 1200px;
   margin: 1rem auto;
 }
 
+.certs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 500px;
+}
+
 .cert {
+  transition: all 0.3s ease-in-out;
   display: grid;
   grid-template-columns: 3fr 2fr;
   gap: 3rem;
-  padding: 0 5rem;
+  width: 90%;
 }
 
-.cert .main-cert {
+.cert.inactive {
+  width: 1%;
+  background-color: rgb(var(--foreground-light-green));
+  overflow: hidden;
+  /* transform: rotateX(80deg); */
+  /* transform: scaleX(1) scaleY(0.1); */
+  /* transform: rotateY(160deg); */
+  height: 15px;
+  width: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.main-cert {
   height: auto;
   width: 100%;
 }
 
-.cert .cert-text {
+.cert-text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 2rem 0;
 }
 
 .cert-text .cert-gallery {
@@ -77,7 +97,6 @@
   z-index: 1;
 }
 
-
 .cert-gallery:hover .g-img:nth-child(1) {
   transform: translate(0px, -20px);
   z-index: 3;
@@ -101,7 +120,7 @@
 .cert-gallery:hover .g-img:nth-child(5) {
   transform: rotate(45deg) translate(80px, -100px);
   z-index: 1;
-} 
+}
 
 #gallery-modal {
   backdrop-filter: blur(3px);

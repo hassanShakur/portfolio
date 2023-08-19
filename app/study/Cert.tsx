@@ -1,10 +1,22 @@
-import { CertProps } from '@/types/appTypes';
-import projectImg from '@/images/hack-3.jpg';
+'use client';
+import { certActions } from '@/redux/app/certsSlice';
+import { CertProps, ReduxStoreType } from '@/types/appTypes';
 import Image from 'next/image';
+import { useDispatch, useSelector } from 'react-redux';
 
 const Cert = ({ cert }: { cert: CertProps }) => {
+  const dispatch = useDispatch();
+  const { activeCert } = useSelector(
+    (state: ReduxStoreType) => state.cert
+  );
+
   return (
-    <div className='cert'>
+    <div
+      className={`cert ${
+        cert.id === activeCert ? 'active' : 'inactive'
+      }`}
+      onClick={() => dispatch(certActions.setActive(cert.id))}
+    >
       <div className='main-cert'>
         <Image
           src={cert.mainCert}
@@ -20,11 +32,11 @@ const Cert = ({ cert }: { cert: CertProps }) => {
       <div className='cert-text'>
         <p className='text'>{cert.summary}</p>
         <div className='cert-gallery'>
-          {cert.minis.map((miniC) => (
-            <div className='g-img' key={miniC.id}>
+          {cert.minis.map((miniCerts) => (
+            <div className='g-img' key={miniCerts.id}>
               <Image
-                src={miniC.certificate}
-                alt={miniC.course}
+                src={miniCerts.certificate}
+                alt={miniCerts.course}
                 placeholder='blur'
               />
             </div>

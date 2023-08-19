@@ -15,6 +15,6 @@ const gallerySlice = createSlice({
   },
 });
 
-export const menuActions = gallerySlice.actions;
+export const galleryActions = gallerySlice.actions;
 
 export default gallerySlice;
