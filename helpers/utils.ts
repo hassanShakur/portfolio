@@ -1,4 +1,3 @@
-import projectImg from '@/images/hack-3.jpg';
 import resipisImg from '@/images/resipis.png';
 import bankifyImg from '@/images/bankify.png';
 import burgersImg from '@/images/burgers.png';
@@ -8,6 +7,7 @@ export const navLinks = [
   { id: 2, name: 'experience', href: '#jobs' },
   { id: 3, name: 'work', href: '#projects' },
   { id: 4, name: 'contact', href: '#contact' },
+  { id: 5, name: 'education', href: '/study' },
 ];
 
 export const techStack = [
