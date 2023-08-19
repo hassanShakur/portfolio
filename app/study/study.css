@@ -25,21 +25,20 @@
 }
 
 .cert-text .cert-gallery {
-  /* width: 500px; */
   display: flex;
   gap: 1rem;
   position: relative;
-  background-color: red;
-
+  cursor: pointer;
 }
 
 .cert-gallery .g-img {
-  width: 120px;
-  height: 140px;
-  /* width: auto; */
+  width: 100px;
+  height: 120px;
+  /* width: 120px;
+  height: 140px; */
   position: absolute;
   bottom: 0;
-  right: 20%;
+  right: 35%;
 }
 
 .g-img img {
@@ -47,7 +46,6 @@
   height: 100%;
   object-fit: cover;
   border-radius: 4px;
-  /* transform-origin: bottom right; */
 }
 
 .g-img:nth-child(1) {
@@ -56,46 +54,61 @@
 }
 
 .g-img:nth-child(2) {
-  transform: rotate(-10deg) translate(-20px, -10px);
+  transform: translate(-20px, -10px);
+  transition-delay: 100ms;
   z-index: 2;
 }
 
 .g-img:nth-child(3) {
-  transform: rotate(10deg) translate(20px, -10px);
+  transform: translate(20px, -10px);
+  transition-delay: 150ms;
   z-index: 2;
 }
 
 .g-img:nth-child(4) {
-  transform: rotate(-20deg) translate(-40px, -5px);
+  transform: translate(-40px, -5px);
+  transition-delay: 300ms;
   z-index: 1;
 }
 
 .g-img:nth-child(5) {
-  transform: rotate(20deg) translate(40px, -5px);
+  transform: translate(40px, -5px);
+  transition-delay: 400ms;
   z-index: 1;
 }
-/* 
-.g-img:nth-child(1) {
+
+
+.cert-gallery:hover .g-img:nth-child(1) {
   transform: translate(0px, -20px);
   z-index: 3;
 }
 
-.g-img:nth-child(2) {
-  transform: rotate(-20deg) translate(-40px, -25px);
+.cert-gallery:hover .g-img:nth-child(2) {
+  transform: rotate(-10deg) translate(-40px, -130px);
   z-index: 2;
 }
 
-.g-img:nth-child(3) {
-  transform: rotate(20deg) translate(40px, -25px);
+.cert-gallery:hover .g-img:nth-child(3) {
+  transform: rotate(10deg) translate(40px, -130px);
   z-index: 2;
 }
 
-.g-img:nth-child(4) {
-  transform: rotate(-30deg) translate(-80px, -30px);
+.cert-gallery:hover .g-img:nth-child(4) {
+  transform: rotate(-45deg) translate(-80px, -100px);
   z-index: 1;
 }
 
-.g-img:nth-child(5) {
-  transform: rotate(30deg) translate(80px, -30px);
+.cert-gallery:hover .g-img:nth-child(5) {
+  transform: rotate(45deg) translate(80px, -100px);
   z-index: 1;
-} */
+} 
+
+#gallery-modal {
+  backdrop-filter: blur(3px);
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}

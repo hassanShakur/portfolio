@@ -1,6 +1,5 @@
 import { saveAs } from 'file-saver';
 import Button from '../button';
-// import myResume from ;
 
 const Resume = () => {
   const saveResume = () => {

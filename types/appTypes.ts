@@ -29,3 +29,15 @@ export type CardProjectProps = {
   }[];
   summary: string;
 };
+
+export type CertProps = {
+  id: number;
+  origin: string;
+  mainCert: StaticImageData;
+  summary: string;
+  minis: {
+    id: number;
+    course: string;
+    certificate: StaticImageData;
+  }[];
+};
