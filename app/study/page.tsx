@@ -13,7 +13,7 @@ export const metadata = {
 const StudyPage = () => {
   return (
     <section id='study'>
-      {/* <Gallery /> */}
+      <Gallery />
       <div className='certs'>
         {certifications.map((c) => (
           <Cert key={c.id} cert={c} />

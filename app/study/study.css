@@ -54,8 +54,6 @@
 .cert-gallery .g-img {
   width: 100px;
   height: 120px;
-  /* width: 120px;
-  height: 140px; */
   position: absolute;
   bottom: 0;
   right: 35%;
@@ -120,14 +118,4 @@
 .cert-gallery:hover .g-img:nth-child(5) {
   transform: rotate(45deg) translate(80px, -100px);
   z-index: 1;
-}
-
-#gallery-modal {
-  backdrop-filter: blur(3px);
-  z-index: 10;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
 }

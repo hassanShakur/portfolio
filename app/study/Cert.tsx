@@ -1,5 +1,6 @@
 'use client';
 import { certActions } from '@/redux/app/certsSlice';
+import { galleryActions } from '@/redux/app/gallerySlice';
 import { CertProps, ReduxStoreType } from '@/types/appTypes';
 import Image from 'next/image';
 import { useDispatch, useSelector } from 'react-redux';
@@ -31,7 +32,12 @@ const Cert = ({ cert }: { cert: CertProps }) => {
       </div>
       <div className='cert-text'>
         <p className='text'>{cert.summary}</p>
-        <div className='cert-gallery'>
+        <div
+          className='cert-gallery'
+          onClick={() =>
+            dispatch(galleryActions.setImages(cert.minis))
+          }
+        >
           {cert.minis.map((miniCerts) => (
             <div className='g-img' key={miniCerts.id}>
               <Image

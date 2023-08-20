@@ -1,8 +1,16 @@
 import { createSlice } from '@reduxjs/toolkit';
+import projectImg from '@/images/hack-3.jpg';
 
 const initialState = {
   isOpen: false,
-  activeImg: 0
+  currentImages: [
+    {
+      id: 1,
+      course: 'string',
+      certificate: projectImg,
+    },
+  ],
+  activeImg: 1,
 };
 
 const gallerySlice = createSlice({
@@ -11,6 +19,13 @@ const gallerySlice = createSlice({
   reducers: {
     toggleModal: (state) => {
       state.isOpen = !state.isOpen;
+    },
+    setImages: (state, action) => {
+      state.currentImages = action.payload;
+      state.isOpen = true;
+    },
+    setActiveImage: (state, action) => {
+      state.activeImg = action.payload;
     },
   },
 });

@@ -6,9 +6,15 @@ export type ReduxStoreType = {
   };
   cert: {
     activeCert: number;
+    maxIndex: number;
   };
   gallery: {
     isOpen: boolean;
+    currentImages: {
+      id: number;
+      course: string;
+      certificate: StaticImageData;
+    }[];
     activeImg: number;
   };
 };
