@@ -5,7 +5,7 @@
   padding: 1.5rem;
   align-items: flex-start;
   position: relative;
-  z-index: 10;
+  z-index: 100;
 }
 
 .logo {

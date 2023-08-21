@@ -44,6 +44,10 @@
   justify-content: space-between;
 }
 
+.cert-text .text {
+  font-size: 1.1rem;
+}
+
 .cert-text .cert-gallery {
   display: flex;
   gap: 1rem;
@@ -118,4 +122,15 @@
 .cert-gallery:hover .g-img:nth-child(5) {
   transform: rotate(45deg) translate(80px, -100px);
   z-index: 1;
+}
+
+@media (max-width: 1300px) {
+  #study {
+    width: 80vw;
+  }
+
+  .cert-gallery .g-img {
+    width: 6vw;
+    height: 8vw;
+  }
 }

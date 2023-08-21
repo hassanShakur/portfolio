@@ -9,7 +9,7 @@
 
 .companies {
   display: flex;
-  font-size: 1rem;
+  font-size: 0.8rem;
   gap: 0;
   overflow-x: scroll;
   border-bottom: 1px solid rgba(var(--foreground-rgb), 0.3);
@@ -38,7 +38,7 @@
 
 li.active {
   color: rgb(var(--foreground-light-green));
-  border-bottom: 3px solid rgb(var(--foreground-light-green));
+  border-bottom: 2px solid rgb(var(--foreground-light-green));
 }
 
 li.active:hover {

@@ -13,7 +13,7 @@ const Gallery = () => {
     (state: ReduxStoreType) => state.gallery
   );
 
-  const selectedImg = currentImages[activeImg];
+  const selectedImg = currentImages[activeImg - 1];
 
   return (
     <>
