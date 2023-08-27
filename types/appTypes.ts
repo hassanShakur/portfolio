@@ -4,10 +4,6 @@ export type ReduxStoreType = {
   menu: {
     isOpen: boolean;
   };
-  cert: {
-    activeCert: number;
-    maxIndex: number;
-  };
   gallery: {
     isOpen: boolean;
     currentImages: {
