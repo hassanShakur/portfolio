@@ -3,14 +3,16 @@
 import { useDispatch, useSelector } from 'react-redux';
 import Sticks from './Sticks';
 import './header.css';
-import { Store } from '@/types/appTypes';
+import { ReduxStoreType } from '@/types/appTypes';
 import Navbar from './Navbar';
 import { menuActions } from '@/redux/app/menuSlice';
 import { Fade } from 'react-awesome-reveal';
 
 const Header = () => {
   const dispatch = useDispatch();
-  const { isOpen } = useSelector((store: Store) => store.menu);
+  const { isOpen } = useSelector(
+    (store: ReduxStoreType) => store.menu
+  );
 
   return (
     <>

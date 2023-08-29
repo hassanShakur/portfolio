@@ -1,12 +1,14 @@
 'use client';
 import { useDispatch, useSelector } from 'react-redux';
-import { Store } from '@/types/appTypes';
+import { ReduxStoreType } from '@/types/appTypes';
 import { menuActions } from '@/redux/app/menuSlice';
 import './sticks.css';
 
 const Sticks = () => {
   const dispatch = useDispatch();
-  const { isOpen } = useSelector((store: Store) => store.menu);
+  const { isOpen } = useSelector(
+    (store: ReduxStoreType) => store.menu
+  );
 
   return (
     <div

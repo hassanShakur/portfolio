@@ -1,6 +1,20 @@
 import { StaticImageData } from 'next/image';
 
-export type Store = { menu: { isOpen: boolean } };
+export type ReduxStoreType = {
+  menu: {
+    isOpen: boolean;
+  };
+  gallery: {
+    isOpen: boolean;
+    currentImages: {
+      id: number;
+      course: string;
+      certificate: StaticImageData;
+    }[];
+    activeImg: number;
+  };
+};
+
 export type BtnProps = { text: string };
 export type SectionTitleProps = { number: number; title: string };
 
@@ -28,4 +42,16 @@ export type CardProjectProps = {
     name: string;
   }[];
   summary: string;
+};
+
+export type CertProps = {
+  id: number;
+  origin: string;
+  mainCert: StaticImageData;
+  summary: string;
+  minis: {
+    id: number;
+    course: string;
+    certificate: StaticImageData;
+  }[];
 };
