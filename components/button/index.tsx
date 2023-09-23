@@ -1,5 +1,5 @@
 import { BtnProps } from '@/types/appTypes';
-import './button.css';
+import './button.scss';
 
 const Button = ({ text }: BtnProps) => {
   return (
