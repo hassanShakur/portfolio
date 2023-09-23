@@ -1,12 +1,16 @@
 import CertTitle from '@/types/certTitle';
-import './certTitle.css';
+import './certTitle.scss';
+import { TbMapPin } from 'react-icons/tb';
 
 const CertTitle = ({ index, company }: CertTitle) => {
   return (
-    <h2 id='cert-title'>
-      <span id='number'>{`${index + 1}. `}</span>
-      {`${company} Journey`}
-    </h2>
+    <div id='cert-title'>
+      <div className='title-decorator'>
+        <TbMapPin className='icon' />
+        <div className='upper-line'></div>
+      </div>
+      <h2>{`${company} Journey`}</h2>
+    </div>
   );
 };
 

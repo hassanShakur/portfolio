@@ -40,6 +40,7 @@ const Cert = ({ cert }: { cert: CertProps }) => {
           </div>
         ))}
       </div>
+      <div id="integral"></div>
     </div>
   );
 };

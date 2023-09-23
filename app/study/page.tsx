@@ -1,4 +1,4 @@
-import './study.css';
+import './study.scss';
 import Gallery from './Gallery';
 import { certifications } from '@/helpers/utils';
 import Cert from './Cert';

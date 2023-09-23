@@ -1,0 +1,23 @@
+#cert-title {
+  position: absolute;
+  top: 0.5rem;
+  display: grid;
+  gap: 1rem;
+
+  .title-decorator {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    .icon {
+      font-size: 1.4rem;
+      color: rgb(var(--foreground-light-green));
+    }
+  }
+
+  .upper-line {
+    height: 1px;
+    width: 100%;
+    background-color: rgb(var(--foreground-light-green));
+  }
+}

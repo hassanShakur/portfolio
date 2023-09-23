@@ -1,7 +1,7 @@
 'use client';
 import projectImg from '@/images/hack-3.jpg';
 import Image from 'next/image';
-import './gallery.css';
+import './gallery.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import ReduxStoreType from '@/types/reduxStore';
 import { galleryActions } from '@/redux/app/gallerySlice';
