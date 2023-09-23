@@ -6,10 +6,10 @@
   align-items: flex-start;
   position: relative;
   z-index: 100;
-}
 
-.logo {
-  font-size: 1.6rem;
+  .logo {
+    font-size: 1.6rem;
+  }
 }
 
 nav {
@@ -24,10 +24,10 @@ nav {
   transform: translateX(100%);
   transition: all 0.3s ease;
   z-index: 5;
-}
 
-nav.menu-open {
-  transform: translateX(0);
+  .menu-open {
+    transform: translateX(0);
+  }
 }
 
 body:has(.menu-open) {

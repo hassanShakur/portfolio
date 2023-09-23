@@ -2,7 +2,7 @@
 
 import { useDispatch, useSelector } from 'react-redux';
 import Sticks from './Sticks';
-import './header.css';
+import './header.scss';
 import ReduxStoreType from '@/types/reduxStore';
 import Navbar from './Navbar';
 import { menuActions } from '@/redux/app/menuSlice';

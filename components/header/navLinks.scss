@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: 'mono';
   src: url(../../fonts/sf-mono/SFMonoLight.otf);
@@ -11,18 +10,18 @@ nav ul {
   gap: 2rem;
   margin-bottom: -30%;
   font-family: mono;
-}
 
-li a {
-  display: grid;
-  gap: 0.5rem;
-  text-transform: capitalize;
-  font-size: 1.1rem;
-  letter-spacing: 1.5px;
-}
+  li a {
+    display: grid;
+    gap: 0.5rem;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
 
-li a .number {
-  color: rgb(var(--foreground-light-green));
+    .number {
+      color: rgb(var(--foreground-light-green));
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -32,12 +31,12 @@ li a .number {
     display: flex;
     gap: 2rem;
     margin-bottom: 0;
-  }
 
-  li a {
-    display: flex;
-    gap: 0.5rem;
-    font-size: 1rem;
+    li a {
+      display: flex;
+      gap: 0.5rem;
+      font-size: 1rem;
+    }
   }
 
   nav button {
