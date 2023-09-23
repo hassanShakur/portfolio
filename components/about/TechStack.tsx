@@ -1,6 +1,6 @@
 'use client';
 import { techStack } from '@/helpers/utils';
-import './tech.css';
+import './tech.scss';
 import { Fade } from 'react-awesome-reveal';
 
 const TechStack = () => {

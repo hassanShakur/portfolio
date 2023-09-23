@@ -4,13 +4,13 @@
   gap: 1rem;
   margin-top: 2rem;
   max-width: 450px;
-}
 
-#about ul li {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  font-size: 0.85rem;
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 0.85rem;
+  }
 }
 
 @media (min-width: 768px) {

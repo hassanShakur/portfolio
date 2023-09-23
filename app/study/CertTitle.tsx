@@ -2,7 +2,7 @@ import CertTitle from '@/types/certTitle';
 import './certTitle.scss';
 import { TbMapPin } from 'react-icons/tb';
 
-const CertTitle = ({ index, company }: CertTitle) => {
+const CertTitle = ({ company }: CertTitle) => {
   return (
     <div id='cert-title'>
       <div className='title-decorator'>

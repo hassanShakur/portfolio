@@ -10,7 +10,7 @@ const Cert = ({ cert }: { cert: CertProps }) => {
 
   return (
     <div className='cert'>
-      <CertTitle index={1} company='Microverse'/>
+      <CertTitle company='Microverse'/>
       <div className='main-cert'>
         <Image
           src={cert.mainCert}
