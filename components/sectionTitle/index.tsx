@@ -1,6 +1,6 @@
 'use client';
 import { SectionTitleProps } from '@/types/appTypes';
-import './title.css';
+import './title.scss';
 import { Slide } from 'react-awesome-reveal';
 
 const SectionTitle = ({ number, title }: SectionTitleProps) => {
