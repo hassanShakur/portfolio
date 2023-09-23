@@ -1,10 +1,10 @@
 'use client';
-import { ProjectProps } from '@/types/appTypes';
 import Image from 'next/image';
 import Link from 'next/link';
 import { TbBrandGithub, TbLink } from 'react-icons/tb';
 import './project.css';
 import { Slide } from 'react-awesome-reveal';
+import ProjectProps from '@/types/projectProps';
 
 const Project = ({ project }: { project: ProjectProps }) => {
   return (

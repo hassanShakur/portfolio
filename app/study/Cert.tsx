@@ -1,14 +1,16 @@
 'use client';
 import { galleryActions } from '@/redux/app/gallerySlice';
-import { CertProps } from '@/types/appTypes';
 import Image from 'next/image';
 import { useDispatch } from 'react-redux';
+import CertTitle from './CertTitle';
+import CertProps from '@/types/certProps';
 
 const Cert = ({ cert }: { cert: CertProps }) => {
   const dispatch = useDispatch();
 
   return (
     <div className='cert'>
+      <CertTitle index={1} company='Microverse'/>
       <div className='main-cert'>
         <Image
           src={cert.mainCert}

@@ -1,11 +1,11 @@
 'use client'
-import { CardProjectProps } from '@/types/appTypes';
 import { TbBrandGithub, TbLink, TbFolder } from 'react-icons/tb';
 import Link from 'next/link';
 import './cardProject.css';
 import { Slide } from 'react-awesome-reveal';
+import ProjectCardProps from '@/types/projectCardProps';
 
-const CardProject = ({ project }: { project: CardProjectProps }) => {
+const CardProject = ({ project }: { project: ProjectCardProps }) => {
   return (
     // <Slide direction='up' cascade fraction={0.2} triggerOnce>
       <div className='project-card'>
