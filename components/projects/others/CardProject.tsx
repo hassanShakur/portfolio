@@ -1,7 +1,7 @@
 'use client'
 import { TbBrandGithub, TbLink, TbFolder } from 'react-icons/tb';
 import Link from 'next/link';
-import './cardProject.css';
+import './cardProject.scss';
 import { Slide } from 'react-awesome-reveal';
 import ProjectCardProps from '@/types/projectCardProps';
 

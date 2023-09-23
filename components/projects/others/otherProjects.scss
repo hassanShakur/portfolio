@@ -7,13 +7,13 @@
 .other-projects {
   margin-top: 4rem;
   padding-top: 2rem;
-}
 
-.other-projects h3 {
-  margin-bottom: 2rem;
-  font-size: 1.2rem;
-  text-transform: capitalize;
-  text-align: center;
+  h3 {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    text-align: center;
+  }
 }
 
 @media (min-width: 600px) {
@@ -25,10 +25,10 @@
 @media (min-width: 768px) {
   .other-projects {
     margin-top: 6rem;
-  }
 
-  .other-projects h3 {
-    font-size: 1.6rem;
+    h3 {
+      font-size: 1.6rem;
+    }
   }
 }
 
@@ -40,9 +40,9 @@
 
   .other-projects {
     margin-top: 10rem;
-  }
 
-  .other-projects h3 {
-    font-size: 1.8rem;
+    h3 {
+      font-size: 1.8rem;
+    }
   }
 }
