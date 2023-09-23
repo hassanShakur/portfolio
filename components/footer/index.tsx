@@ -1,4 +1,4 @@
-import './footer.css';
+import './footer.scss';
 import Link from 'next/link';
 import SocialIcons from './SocialIcons';
 import SocialEmail from './SocialEmail';
