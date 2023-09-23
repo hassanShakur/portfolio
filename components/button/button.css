@@ -8,10 +8,10 @@ button {
   font-size: 1rem;
   text-transform: capitalize;
   transition: all 0.3s ease;
-}
 
-button:hover {
-  transform: translate(-5px, -5px);
-  box-shadow: 4px 4px 0px 0px rgb(var(--foreground-light-green));
-  cursor: pointer;
+  &:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 4px 4px 0px 0px rgb(var(--foreground-light-green));
+    cursor: pointer;
+  }
 }
