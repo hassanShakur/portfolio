@@ -1,5 +1,5 @@
 import { positions } from '@/helpers/utils';
-import './positions.css';
+import './positions.scss';
 
 const Positions = ({ activeTab }: { activeTab: number }) => {
   return (

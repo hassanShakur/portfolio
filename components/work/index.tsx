@@ -1,7 +1,7 @@
 import SectionTitle from '../sectionTitle';
 import CompanyTabs from './CompanyTabs';
-import './work.css';
-import './info.css'
+import './work.scss';
+import './info.scss'
 
 const Work = () => {
   return (
