@@ -17,12 +17,12 @@ const Header = () => {
   return (
     <>
       <header>
-        <Fade direction='down' cascade duration={500} triggerOnce>
-          <div className='nav-pane'>
+        <div className='nav-pane'>
+          <Fade direction='down' cascade duration={500} triggerOnce>
             <div className='logo'>H</div>
             <Sticks />
-          </div>
-        </Fade>
+          </Fade>
+        </div>
         <nav className={isOpen ? 'menu-open' : ''}>
           <Navbar />
         </nav>
