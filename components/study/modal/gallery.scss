@@ -63,5 +63,24 @@
   }
 }
 
-@media (min-width: 1260px) {
+@media (max-width: 900px) {
+  .images {
+    width: 80%;
+    margin: 20vh auto;
+
+    #selected {
+      img {
+        width: 80%;
+      }
+    }
+  }
+
+  .thumbs {
+    width: 75%;
+    margin: 0 auto;
+
+    > * {
+      flex-grow: 1;
+    }
+  }
 }
