@@ -51,10 +51,10 @@ body {
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
-}
 
-body:has(.menu-open) {
-  max-height: 100vh;
+  &:has(.menu-open) {
+    max-height: 100vh;
+  }
 }
 
 a {
@@ -62,25 +62,27 @@ a {
   color: inherit;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: rgb(var(--foreground-light-green));
+  }
 }
 
-a:hover {
-  color: rgb(var(--foreground-light-green));
-}
+p a {
+  &::after {
+    content: '';
+    position: absolute;
+    height: 0.01rem;
+    width: 0;
+    bottom: 3px;
+    left: 0;
+    background-color: rgb(var(--foreground-light-green));
+    transition: width 0.2s ease-in-out;
+  }
 
-p a::after {
-  content: '';
-  position: absolute;
-  height: 0.01rem;
-  width: 0;
-  bottom: 3px;
-  left: 0;
-  background-color: rgb(var(--foreground-light-green));
-  transition: width 0.2s ease-in-out;
-}
-
-p a:hover::after {
-  width: 100%;
+  &:hover::after {
+    width: 100%;
+  }
 }
 
 ul li {

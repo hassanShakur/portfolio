@@ -241,3 +241,10 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  #study {
+    width: 100vw;
+    min-width: 250px;
+  }
+}
