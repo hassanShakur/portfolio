@@ -39,7 +39,8 @@
   }
 
   .cert-text {
-    width: 45%;
+    width: 50%;
+    max-width: 25rem;
     margin-bottom: 13rem;
 
     .text {
@@ -51,6 +52,8 @@
     display: flex;
     gap: 1rem;
     cursor: pointer;
+    position: absolute;
+    bottom: 1rem;
 
     .g-img {
       width: 70px;
@@ -98,27 +101,22 @@
     &:hover .g-img {
       &:nth-child(1) {
         transform: translate(0px, -10px);
-        z-index: 3;
       }
 
       &:nth-child(2) {
         transform: rotate(-10deg) translate(-10px, -50px);
-        z-index: 2;
       }
 
       &:nth-child(3) {
         transform: rotate(10deg) translate(10px, -50px);
-        z-index: 2;
       }
 
       &:nth-child(4) {
         transform: rotate(-45deg) translate(-25px, -60px);
-        z-index: 1;
       }
 
       &:nth-child(5) {
         transform: rotate(45deg) translate(25px, -60px);
-        z-index: 1;
       }
     }
   }
@@ -146,7 +144,7 @@
     }
 
     .mini-certs {
-      transform: translateX(20px);
+      right: 15%;
     }
   }
 
@@ -178,7 +176,7 @@
     }
 
     .mini-certs {
-      transform: translateX(-100px);
+      left: 10%;
     }
   }
 }
@@ -191,5 +189,49 @@
   .mini-certs .g-img {
     width: 6vw;
     height: 8vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .cert {
+    display: grid;
+
+    .main-cert {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .cert-text {
+      width: 90%;
+      max-width: unset;
+      margin-bottom: 5rem;
+    }
+
+    .mini-certs {
+      position: unset;
+    }
+
+    &:nth-child(odd) {
+      .cert-text {
+        margin-left: auto;
+        text-align: right;
+      }
+
+      .mini-certs {
+        margin-right: auto;
+      }
+    }
+
+    &:nth-child(even) {
+      .cert-text {
+        margin-right: auto;
+        text-align: left;
+      }
+
+      .mini-certs {
+        margin-left: auto;
+        margin-right: 12%;
+      }
+    }
   }
 }
