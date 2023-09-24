@@ -214,7 +214,7 @@
     &:nth-child(odd) {
       .cert-text {
         margin-left: auto;
-        text-align: right;
+        text-align: left;
       }
 
       .mini-certs {
@@ -223,9 +223,15 @@
     }
 
     &:nth-child(even) {
+      #cert-title {
+        // left: 2rem;
+        right: 2rem;
+        margin-right: auto;
+      }
+
       .cert-text {
         margin-right: auto;
-        text-align: left;
+        text-align: right;
       }
 
       .mini-certs {

@@ -15,16 +15,41 @@
     grid-template-columns: 2fr 1fr;
 
     .text {
-        width: 80%;
-        font-size: 18px;
+      width: 80%;
+      font-size: 18px;
     }
 
     .certified {
       width: 100%;
+      display: grid;
+      place-items: center;
 
       img {
         width: inherit;
         height: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .study-summary {
+    gap: 3rem;
+
+    .summary-content {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+
+      .text {
+        width: 100%;
+        display: grid;
+        gap: 1rem;
+      }
+
+      .certified {
+        width: 50%;
+        margin: 0 auto;
       }
     }
   }
