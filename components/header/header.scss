@@ -5,7 +5,7 @@
   padding: 1.5rem;
   align-items: flex-start;
   position: relative;
-  z-index: 100;
+  z-index: 10;
 
   .logo {
     font-size: 1.6rem;
@@ -25,7 +25,7 @@ nav {
   transition: all 0.3s ease;
   z-index: 5;
 
-  .menu-open {
+  &.menu-open {
     transform: translateX(0);
   }
 }

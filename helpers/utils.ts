@@ -128,8 +128,8 @@ export const projects = [
     name: 'resipis app',
     badge: 'react based',
     image: resipisImg,
-    github: 'https://github.com/hassanShakur',
-    live: 'https://github.com/hassanShakur',
+    github: 'https://github.com/hassanShakur/resipis',
+    live: 'https://resipis.netlify.app/',
     techs: [
       { id: 1, name: 'react' },
       { id: 2, name: 'javaScript' },
@@ -145,8 +145,8 @@ export const projects = [
     name: 'bankify website',
     badge: 'javaScript based',
     image: bankifyImg,
-    github: 'https://github.com/hassanShakur',
-    live: 'https://github.com/hassanShakur',
+    github: 'https://github.com/hassanShakur/bankify_demo',
+    live: 'https://hassanshakur.github.io/bankify_demo/',
     techs: [
       { id: 1, name: 'javaScript' },
       { id: 2, name: 'SCSS' },
@@ -160,8 +160,8 @@ export const projects = [
     name: 'the burgers',
     badge: 'javaScript based',
     image: burgersImg,
-    github: 'https://github.com/hassanShakur',
-    live: 'https://github.com/hassanShakur',
+    github: 'https://github.com/hassanShakur/burger-ing',
+    live: 'https://burger-ing.netlify.app/',
     techs: [
       { id: 1, name: 'javaScript' },
       { id: 2, name: 'express' },
