@@ -2,8 +2,8 @@
 import { galleryActions } from '@/redux/app/gallerySlice';
 import Image from 'next/image';
 import { useDispatch } from 'react-redux';
-import CertTitle from './CertTitle';
 import CertProps from '@/types/certProps';
+import CertTitle from './CertTitle';
 
 const Cert = ({ cert }: { cert: CertProps }) => {
   const dispatch = useDispatch();

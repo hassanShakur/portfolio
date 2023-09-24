@@ -1,0 +1,31 @@
+.study-summary {
+  display: grid;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 1rem auto;
+  margin-bottom: 4rem;
+  padding: 1rem calc(2rem + 5%);
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  .summary-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    .text {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .certified {
+      width: 100%;
+
+      img {
+        width: inherit;
+        height: auto;
+      }
+    }
+  }
+}

@@ -9,7 +9,7 @@ const CertTitle = ({ company }: CertTitle) => {
         <TbMapPin className='icon' />
         <div className='upper-line'></div>
       </div>
-      <h2>{`${company} Journey`}</h2>
+      <h4>{`${company} Journey`}</h4>
     </div>
   );
 };
