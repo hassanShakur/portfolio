@@ -1,5 +1,5 @@
 'use client';
-import { techStack } from '@/helpers/utils';
+import techStack from '@/data/techStack';
 import './tech.scss';
 import { Fade } from 'react-awesome-reveal';
 

@@ -1,5 +1,5 @@
 import './study.scss';
-import { certifications } from '@/helpers/utils';
+import certifications from '@/data/certifications';
 import Cert from '@/components/study/cert';
 import StudySummary from '@/components/study/summary';
 import Gallery from '@/components/study/modal/Gallery';

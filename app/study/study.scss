@@ -224,7 +224,6 @@
 
     &:nth-child(even) {
       #cert-title {
-        // left: 2rem;
         right: 2rem;
         margin-right: auto;
       }
@@ -246,5 +245,31 @@
   #study {
     width: 100vw;
     min-width: 250px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cert {
+    .main-cert {
+      width: 90%;
+    }
+
+    .cert-text {
+      width: 95%;
+    }
+
+    &:nth-child(odd) {
+      .mini-certs {
+        margin-right: auto;
+        margin-left: 10%;
+      }
+    }
+
+    &:nth-child(even) {
+      .mini-certs {
+        margin-left: auto;
+        margin-right: 25%;
+      }
+    }
   }
 }

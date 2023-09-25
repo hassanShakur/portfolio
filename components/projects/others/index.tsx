@@ -1,5 +1,5 @@
 'use client';
-import { otherProjects } from '@/helpers/utils';
+import otherProjects from '@/data/otherProjects';
 import CardProject from './CardProject';
 import './otherProjects.scss';
 import { Slide, Fade, Zoom } from 'react-awesome-reveal';

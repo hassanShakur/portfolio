@@ -1,5 +1,5 @@
-import { navLinks } from '@/helpers/utils';
 import Link from 'next/link';
+import navLinks from '@/data/navLinks';
 import './navLinks.scss';
 import Button from '../button';
 import { useDispatch } from 'react-redux';
