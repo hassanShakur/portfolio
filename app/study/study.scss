@@ -35,7 +35,7 @@
 
   .main-cert {
     height: auto;
-    width: 30%;
+    width: 50%;
   }
 
   .cert-text {
@@ -56,7 +56,7 @@
     bottom: 1rem;
 
     .g-img {
-      width: 70px;
+      width: 80px;
       height: 80px;
       position: absolute;
       bottom: 0;
@@ -68,7 +68,7 @@
         border-radius: 4px;
       }
 
-      &:nth-child(1) {
+      &:nth-child(5) {
         transform: translate(0px, -15px);
         z-index: 3;
       }
@@ -91,7 +91,7 @@
         z-index: 1;
       }
 
-      &:nth-child(5) {
+      &:nth-child(1) {
         transform: translate(20px, -5px);
         transition-delay: 400ms;
         z-index: 1;
@@ -99,7 +99,7 @@
     }
 
     &:hover .g-img {
-      &:nth-child(1) {
+      &:nth-child(5) {
         transform: translate(0px, -10px);
       }
 
@@ -115,7 +115,7 @@
         transform: rotate(-45deg) translate(-25px, -60px);
       }
 
-      &:nth-child(5) {
+      &:nth-child(1) {
         transform: rotate(45deg) translate(25px, -60px);
       }
     }

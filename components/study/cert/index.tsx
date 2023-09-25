@@ -2,15 +2,15 @@
 import { galleryActions } from '@/redux/app/gallerySlice';
 import Image from 'next/image';
 import { useDispatch } from 'react-redux';
-import CertProps from '@/types/certProps';
-import CertTitle from './CertTitle';
+import CertType from '@/types/certType';
+import CertTitleType from './CertTitle';
 
-const Cert = ({ cert }: { cert: CertProps }) => {
+const Cert = ({ cert }: { cert: CertType }) => {
   const dispatch = useDispatch();
 
   return (
     <div className='cert'>
-      <CertTitle company='Microverse'/>
+      <CertTitleType company={cert.name} />
       <div className='main-cert'>
         <Image
           src={cert.mainCert}
@@ -30,7 +30,7 @@ const Cert = ({ cert }: { cert: CertProps }) => {
         className='mini-certs'
         onClick={() => dispatch(galleryActions.setImages(cert.minis))}
       >
-        {cert.minis.map((miniCerts) => (
+        {cert.minis.slice(0, 5).map((miniCerts) => (
           <div className='g-img' key={miniCerts.id}>
             <Image
               src={miniCerts.certificate}
@@ -40,7 +40,7 @@ const Cert = ({ cert }: { cert: CertProps }) => {
           </div>
         ))}
       </div>
-      <div id="integral"></div>
+      <div id='integral'></div>
     </div>
   );
 };

@@ -1,8 +1,8 @@
-import CertTitle from '@/types/certTitle';
+import CertTitleType from '@/types/certTitleType';
 import './certTitle.scss';
 import { TbMapPin } from 'react-icons/tb';
 
-const CertTitle = ({ company }: CertTitle) => {
+const CertTitleType = ({ company }: CertTitleType) => {
   return (
     <div id='cert-title'>
       <div className='title-decorator'>
@@ -14,4 +14,4 @@ const CertTitle = ({ company }: CertTitle) => {
   );
 };
 
-export default CertTitle;
+export default CertTitleType;

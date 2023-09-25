@@ -13,7 +13,7 @@ const googleITCerts = {
   minis: [
     {
       id: 1,
-      course: 'Technical SUpport Fundamentals',
+      course: 'Technical Support Fundamentals',
       certificate: IT_1,
     },
     {

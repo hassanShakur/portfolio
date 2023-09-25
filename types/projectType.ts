@@ -1,6 +1,6 @@
-import { StaticImageData } from "next/image";
+import { StaticImageData } from 'next/image';
 
-interface ProjectProps {
+interface ProjectType {
   id: number;
   name: string;
   badge: string;
@@ -12,6 +12,6 @@ interface ProjectProps {
     name: string;
   }[];
   summary: string;
-};
+}
 
-export default ProjectProps
+export default ProjectType;

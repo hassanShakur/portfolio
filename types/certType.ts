@@ -1,7 +1,8 @@
 import { StaticImageData } from 'next/image';
 
-interface CertProps {
+interface CertType {
   id: number;
+  name: string;
   origin: string;
   mainCert: StaticImageData;
   summary: string;
@@ -12,4 +13,4 @@ interface CertProps {
   }[];
 }
 
-export default CertProps;
+export default CertType;

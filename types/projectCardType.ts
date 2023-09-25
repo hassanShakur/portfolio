@@ -1,4 +1,4 @@
-interface ProjectCardProps {
+interface ProjectCardType {
   id: number;
   name: string;
   github: string;
@@ -10,4 +10,4 @@ interface ProjectCardProps {
   summary: string;
 }
 
-export default ProjectCardProps;
+export default ProjectCardType;
