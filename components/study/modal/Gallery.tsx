@@ -8,12 +8,10 @@ import { TbArrowBigRight, TbArrowBigLeft } from 'react-icons/tb';
 
 const Gallery = () => {
   const dispatch = useDispatch();
-  const {
-    currentCertIndex: index,
-    isOpen,
-    modalCerts,
-  } = useSelector((state: ReduxStoreType) => state.gallery);
-
+  const { currentCertIndex, isOpen, modalCerts } = useSelector(
+    (state: ReduxStoreType) => state.gallery
+  );
+console.log(currentCertIndex)
   return (
     <>
       {isOpen && (
@@ -26,21 +24,41 @@ const Gallery = () => {
           }}
         >
           <div className='modal-content'>
-            <div className='cert-info'>
-              <div className='mini-cert'>
-                <Image
-                  src={modalCerts[0].certificate}
-                  alt={modalCerts[0].course}
-                />
-              </div>
+            <div className='carrosel'>
+              <div className='scrollable'>
+                {modalCerts.map((cert) => (
+                  <div
+                    className='cert-info'
+                    key={cert.id}
+                    id={
+                      currentCertIndex === cert.id
+                        ? 'active'
+                        : 'inactive'
+                    }
+                    // id='active'
+                  >
+                    <div className='mini-cert'>
+                      <Image
+                        src={cert.certificate}
+                        alt={cert.course}
+                      />
+                    </div>
 
-              <div className='mini-description'>
-                {modalCerts[0].description}
+                    <div className='mini-description text'>
+                      {cert.description}
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
+
             <div className='carrosel-arrows'>
-              <TbArrowBigLeft />
-              <TbArrowBigRight />
+              <TbArrowBigLeft
+                onClick={() => dispatch(galleryActions.prevCert())}
+              />
+              <TbArrowBigRight
+                onClick={() => dispatch(galleryActions.nextCert())}
+              />
             </div>
           </div>
         </div>

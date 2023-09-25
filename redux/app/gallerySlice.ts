@@ -6,11 +6,18 @@ const initialState = {
   currentCertIndex: 0,
   modalCerts: [
     {
-      id: 1,
+      id: 0,
       course: 'string',
       certificate: projectImg,
       description:
         'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sit architecto ipsum et officia error! Mollitia fugit similique nesciunt, consequatur dolorum quas ipsam rerum, cumque eos, repellat ex consectetur corrupti!',
+    },
+    {
+      id: 1,
+      course: 'string',
+      certificate: projectImg,
+      description:
+        'Ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sit architecto ipsum et officia error! Mollitia fugit similique nesciunt, consequatur dolorum quas ipsam rerum, cumque eos, repellat ex consectetur corrupti!',
     },
   ],
 };
@@ -27,13 +34,13 @@ const gallerySlice = createSlice({
       state.isOpen = true;
     },
     nextCert: (state) => {
-      state.modalCerts.length - 1 === state.currentCertIndex
+      state.currentCertIndex >= state.modalCerts.length - 1
         ? (state.currentCertIndex = 0)
         : (state.currentCertIndex += 1);
     },
     prevCert: (state) => {
-      state.currentCertIndex === 0
-        ? (state.currentCertIndex = state.modalCerts.length)
+      state.currentCertIndex <= 0
+        ? (state.currentCertIndex = state.modalCerts.length - 1)
         : (state.currentCertIndex -= 1);
     },
   },
