@@ -1,6 +1,6 @@
-import resipisImg from '@/images/resipis.png';
-import bankifyImg from '@/images/bankify.png';
-import burgersImg from '@/images/burgers.png';
+import resipisImg from '@/images/projects/resipis.png';
+import bankifyImg from '@/images/projects/bankify.png';
+import burgersImg from '@/images/projects/burgers.png';
 
 const projects = [
   {
