@@ -15,31 +15,44 @@ const googlePMCerts = {
     {
       id: 1,
       course: 'Foundations of Project Management',
+      description:
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sit architecto ipsum et officia error! Mollitia fugit similique nesciunt, consequatur dolorum quas ipsam rerum, cumque eos, repellat ex consectetur corrupti!',
       certificate: PM_1,
     },
     {
       id: 2,
       course: 'Project Initiation: Starting a Successful Project',
+      description:
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sit architecto ipsum et officia error! Mollitia fugit similique nesciunt, consequatur dolorum quas ipsam rerum, cumque eos, repellat ex consectetur corrupti!',
       certificate: PM_2,
     },
     {
       id: 3,
       course: 'Project Planning: Putting it All Together',
+      description:
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sit architecto ipsum et officia error! Mollitia fugit similique nesciunt, consequatur dolorum quas ipsam rerum, cumque eos, repellat ex consectetur corrupti!',
       certificate: PM_3,
     },
     {
       id: 4,
       course: 'Project Execution: Running the Project',
+      description:
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sit architecto ipsum et officia error! Mollitia fugit similique nesciunt, consequatur dolorum quas ipsam rerum, cumque eos, repellat ex consectetur corrupti!',
       certificate: PM_4,
     },
     {
       id: 5,
       course: 'Agile Project Management',
+      description:
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sit architecto ipsum et officia error! Mollitia fugit similique nesciunt, consequatur dolorum quas ipsam rerum, cumque eos, repellat ex consectetur corrupti!',
       certificate: PM_5,
     },
     {
       id: 6,
-      course: 'Capstone: Applying Project Management in the Real World',
+      course:
+        'Capstone: Applying Project Management in the Real World',
+      description:
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sit architecto ipsum et officia error! Mollitia fugit similique nesciunt, consequatur dolorum quas ipsam rerum, cumque eos, repellat ex consectetur corrupti!',
       certificate: PM_6,
     },
   ],

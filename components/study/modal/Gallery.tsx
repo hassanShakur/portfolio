@@ -1,52 +1,46 @@
 'use client';
-import projectImg from '@/images/hack-3.jpg';
 import Image from 'next/image';
 import './gallery.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import ReduxStoreType from '@/types/reduxStore';
 import { galleryActions } from '@/redux/app/gallerySlice';
-import { MouseEventHandler } from 'react';
+import { TbArrowBigRight, TbArrowBigLeft } from 'react-icons/tb';
 
 const Gallery = () => {
   const dispatch = useDispatch();
-  const { activeImg, isOpen, currentImages } = useSelector(
-    (state: ReduxStoreType) => state.gallery
-  );
-
-  const selectedImg = currentImages[activeImg - 1];
+  const {
+    currentCertIndex: index,
+    isOpen,
+    modalCerts,
+  } = useSelector((state: ReduxStoreType) => state.gallery);
 
   return (
     <>
       {isOpen && (
         <div
-          id='gallery-modal'
-          className='g-modal'
+          className='modal'
           onClick={(e: any) => {
             e.stopPropagation();
             if (e.target.classList.contains('g-modal'))
               dispatch(galleryActions.toggleModal());
           }}
         >
-          <div className='images'>
-            <div id='selected'>
-              <Image
-                src={selectedImg.certificate}
-                alt={selectedImg.course}
-              />
-            </div>
+          <div className='modal-content'>
+            <div className='cert-info'>
+              <div className='mini-cert'>
+                <Image
+                  src={modalCerts[0].certificate}
+                  alt={modalCerts[0].course}
+                />
+              </div>
 
-            <div className='thumbs'>
-              {currentImages.map((cImg) => (
-                <div
-                  key={cImg.id}
-                  className={cImg.id === activeImg ? 'selected' : ''}
-                  onClick={() =>
-                    dispatch(galleryActions.setActiveImage(cImg.id))
-                  }
-                >
-                  <Image src={cImg.certificate} alt={cImg.course} />
-                </div>
-              ))}
+              <div className='mini-description'>
+                {modalCerts[0].description}
+              </div>
+            </div>
+            <div className='carrosel-arrows'>
+              <TbArrowBigLeft />
+              <TbArrowBigRight />
             </div>
           </div>
         </div>

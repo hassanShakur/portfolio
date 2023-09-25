@@ -6,12 +6,13 @@ interface ReduxStoreType {
   };
   gallery: {
     isOpen: boolean;
-    currentImages: {
+    currentCertIndex: number;
+    modalCerts: {
       id: number;
       course: string;
       certificate: StaticImageData;
+      description: string;
     }[];
-    activeImg: number;
   };
 }
 

@@ -2,15 +2,17 @@ import { createSlice } from '@reduxjs/toolkit';
 import projectImg from '@/images/hack-3.jpg';
 
 const initialState = {
-  isOpen: false,
-  currentImages: [
+  isOpen: true,
+  currentCertIndex: 0,
+  modalCerts: [
     {
       id: 1,
       course: 'string',
       certificate: projectImg,
+      description:
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sit architecto ipsum et officia error! Mollitia fugit similique nesciunt, consequatur dolorum quas ipsam rerum, cumque eos, repellat ex consectetur corrupti!',
     },
   ],
-  activeImg: 1,
 };
 
 const gallerySlice = createSlice({
@@ -21,11 +23,18 @@ const gallerySlice = createSlice({
       state.isOpen = !state.isOpen;
     },
     setImages: (state, action) => {
-      state.currentImages = action.payload;
+      state.modalCerts = action.payload;
       state.isOpen = true;
     },
-    setActiveImage: (state, action) => {
-      state.activeImg = action.payload;
+    nextCert: (state) => {
+      state.modalCerts.length - 1 === state.currentCertIndex
+        ? (state.currentCertIndex = 0)
+        : (state.currentCertIndex += 1);
+    },
+    prevCert: (state) => {
+      state.currentCertIndex === 0
+        ? (state.currentCertIndex = state.modalCerts.length)
+        : (state.currentCertIndex -= 1);
     },
   },
 });

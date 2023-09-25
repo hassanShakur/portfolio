@@ -9,6 +9,7 @@ interface CertType {
   minis: {
     id: number;
     course: string;
+    description: string;
     certificate: StaticImageData;
   }[];
 }
