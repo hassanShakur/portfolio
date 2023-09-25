@@ -12,35 +12,35 @@ const googleITCerts = {
     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sit architecto ipsum et officia error! Mollitia fugit similique nesciunt, consequatur dolorum quas ipsam rerum, cumque eos, repellat ex consectetur corrupti!',
   minis: [
     {
-      id: 1,
+      id: 0,
       course: 'Technical Support Fundamentals',
       description:
         'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sit architecto ipsum et officia error! Mollitia fugit similique nesciunt, consequatur dolorum quas ipsam rerum, cumque eos, repellat ex consectetur corrupti!',
       certificate: IT_1,
     },
     {
-      id: 2,
+      id: 1,
       course: 'Bits & Bytes of Computer Networking',
       description:
         'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sit architecto ipsum et officia error! Mollitia fugit similique nesciunt, consequatur dolorum quas ipsam rerum, cumque eos, repellat ex consectetur corrupti!',
       certificate: IT_2,
     },
     {
-      id: 3,
+      id: 2,
       course: 'Operating Systems & You: Becoming a Power User',
       description:
         'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sit architecto ipsum et officia error! Mollitia fugit similique nesciunt, consequatur dolorum quas ipsam rerum, cumque eos, repellat ex consectetur corrupti!',
       certificate: IT_3,
     },
     {
-      id: 4,
+      id: 3,
       course: 'System Administration & IT Infrastructure Services',
       description:
         'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sit architecto ipsum et officia error! Mollitia fugit similique nesciunt, consequatur dolorum quas ipsam rerum, cumque eos, repellat ex consectetur corrupti!',
       certificate: IT_4,
     },
     {
-      id: 5,
+      id: 4,
       course: 'IT Securuty: Defence Against the Digital Dark arts',
       description:
         'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sit architecto ipsum et officia error! Mollitia fugit similique nesciunt, consequatur dolorum quas ipsam rerum, cumque eos, repellat ex consectetur corrupti!',

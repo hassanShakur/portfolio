@@ -10,28 +10,28 @@ const microverseCerts = {
     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sit architecto ipsum et officia error! Mollitia fugit similique nesciunt, consequatur dolorum quas ipsam rerum, cumque eos, repellat ex consectetur corrupti!',
   minis: [
     {
-      id: 1,
+      id: 0,
       course: 'HTML & CSS Module',
       description:
         'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sit architecto ipsum et officia error! Mollitia fugit similique nesciunt, consequatur dolorum quas ipsam rerum, cumque eos, repellat ex consectetur corrupti!',
       certificate: MV_1,
     },
     {
-      id: 2,
+      id: 1,
       course: 'JavaScript Module',
       description:
         'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sit architecto ipsum et officia error! Mollitia fugit similique nesciunt, consequatur dolorum quas ipsam rerum, cumque eos, repellat ex consectetur corrupti!',
       certificate: MV_2,
     },
     {
-      id: 3,
+      id: 2,
       course: 'React & Redux Module',
       description:
         'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sit architecto ipsum et officia error! Mollitia fugit similique nesciunt, consequatur dolorum quas ipsam rerum, cumque eos, repellat ex consectetur corrupti!',
       certificate: MV_3,
     },
     {
-      id: 4,
+      id: 3,
       course: 'Ruby & Databases Module',
       description:
         'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sit architecto ipsum et officia error! Mollitia fugit similique nesciunt, consequatur dolorum quas ipsam rerum, cumque eos, repellat ex consectetur corrupti!',

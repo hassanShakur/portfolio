@@ -13,42 +13,42 @@ const googlePMCerts = {
     'Lorem ipsum dolor spm, amet consectetur adipisicing elpm. Doloribus spm archpmecto ipsum et officia error! Mollpmia fugpm similique nesciunt, consequatur dolorum quas ipsam rerum, cumque eos, repellat ex consectetur corrupti!',
   minis: [
     {
-      id: 1,
+      id: 0,
       course: 'Foundations of Project Management',
       description:
         'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sit architecto ipsum et officia error! Mollitia fugit similique nesciunt, consequatur dolorum quas ipsam rerum, cumque eos, repellat ex consectetur corrupti!',
       certificate: PM_1,
     },
     {
-      id: 2,
+      id: 1,
       course: 'Project Initiation: Starting a Successful Project',
       description:
         'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sit architecto ipsum et officia error! Mollitia fugit similique nesciunt, consequatur dolorum quas ipsam rerum, cumque eos, repellat ex consectetur corrupti!',
       certificate: PM_2,
     },
     {
-      id: 3,
+      id: 2,
       course: 'Project Planning: Putting it All Together',
       description:
         'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sit architecto ipsum et officia error! Mollitia fugit similique nesciunt, consequatur dolorum quas ipsam rerum, cumque eos, repellat ex consectetur corrupti!',
       certificate: PM_3,
     },
     {
-      id: 4,
+      id: 3,
       course: 'Project Execution: Running the Project',
       description:
         'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sit architecto ipsum et officia error! Mollitia fugit similique nesciunt, consequatur dolorum quas ipsam rerum, cumque eos, repellat ex consectetur corrupti!',
       certificate: PM_4,
     },
     {
-      id: 5,
+      id: 4,
       course: 'Agile Project Management',
       description:
         'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sit architecto ipsum et officia error! Mollitia fugit similique nesciunt, consequatur dolorum quas ipsam rerum, cumque eos, repellat ex consectetur corrupti!',
       certificate: PM_5,
     },
     {
-      id: 6,
+      id: 5,
       course:
         'Capstone: Applying Project Management in the Real World',
       description:

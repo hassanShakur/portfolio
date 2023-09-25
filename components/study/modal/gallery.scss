@@ -6,10 +6,21 @@
   height: 100vh;
   width: 100vw;
   backdrop-filter: blur(3px);
+  transition: all 0.3s ease-in-out;
+
+  &#open {
+    transform: unset;
+  }
+
+  &#closed {
+    transform: scale(0);
+  }
 
   .modal-content {
     width: 70%;
     margin: 10vh auto;
+    min-height: 600px;
+    overflow-y: scroll;
     padding: 4rem;
     border-radius: 5px;
     background-color: rgba(var(--background-rgb), 1);
@@ -28,7 +39,6 @@
       }
 
       .cert-info {
-        // width: 60vw;
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 3rem;
@@ -66,7 +76,8 @@
 
     .carrosel-arrows {
       width: fit-content;
-      margin: 4rem auto 0;
+      margin: 4rem 0 0;
+      margin-left: auto;
       display: flex;
       gap: 5rem;
       font-size: 1.5rem;

@@ -1,25 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
-import projectImg from '@/images/hack-3.jpg';
 
 const initialState = {
-  isOpen: true,
+  isOpen: false,
   currentCertIndex: 0,
-  modalCerts: [
-    {
-      id: 0,
-      course: 'string',
-      certificate: projectImg,
-      description:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sit architecto ipsum et officia error! Mollitia fugit similique nesciunt, consequatur dolorum quas ipsam rerum, cumque eos, repellat ex consectetur corrupti!',
-    },
-    {
-      id: 1,
-      course: 'string',
-      certificate: projectImg,
-      description:
-        'Ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sit architecto ipsum et officia error! Mollitia fugit similique nesciunt, consequatur dolorum quas ipsam rerum, cumque eos, repellat ex consectetur corrupti!',
-    },
-  ],
+  modalCerts: [],
 };
 
 const gallerySlice = createSlice({
@@ -28,6 +12,7 @@ const gallerySlice = createSlice({
   reducers: {
     toggleModal: (state) => {
       state.isOpen = !state.isOpen;
+      state.currentCertIndex = 0;
     },
     setImages: (state, action) => {
       state.modalCerts = action.payload;
