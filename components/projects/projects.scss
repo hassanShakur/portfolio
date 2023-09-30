@@ -1,0 +1,29 @@
+.projects {
+  display: grid;
+  gap: 3rem;
+
+  .project {
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 4px rgba(7, 28, 54, 0.826);
+  }
+}
+
+@media (min-width: 768px) {
+  .project {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(7, 1fr);
+    box-shadow: none;
+  }
+}
+
+@media (min-width: 1080px) {
+  .projects {
+    gap: 8rem;
+
+    .project {
+      grid-template-columns: repeat(9, 1fr);
+    }
+  }
+}

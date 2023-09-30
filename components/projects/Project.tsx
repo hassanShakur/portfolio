@@ -1,12 +1,12 @@
 'use client';
-import { ProjectProps } from '@/types/appTypes';
 import Image from 'next/image';
 import Link from 'next/link';
 import { TbBrandGithub, TbLink } from 'react-icons/tb';
-import './project.css';
+import './project.scss';
 import { Slide } from 'react-awesome-reveal';
+import ProjectType from '@/types/projectType';
 
-const Project = ({ project }: { project: ProjectProps }) => {
+const Project = ({ project }: { project: ProjectType }) => {
   return (
     <div className='project'>
       <Link href={project.live} className='project-img'>

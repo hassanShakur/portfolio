@@ -1,7 +1,8 @@
-import './study.css';
-import Gallery from './Gallery';
-import { certifications } from '@/helpers/utils';
-import Cert from './Cert';
+import './study.scss';
+import certifications from '@/data/certifications';
+import Cert from '@/components/study/cert';
+import StudySummary from '@/components/study/summary';
+import Gallery from '@/components/study/modal/Gallery';
 
 export const metadata = {
   title: 'Hassan | Study Journey',
@@ -12,6 +13,7 @@ export const metadata = {
 const StudyPage = () => {
   return (
     <section id='study'>
+      <StudySummary />
       <Gallery />
       <div className='certs'>
         {certifications.map((c) => (

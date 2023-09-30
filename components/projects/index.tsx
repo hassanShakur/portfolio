@@ -1,6 +1,6 @@
 import SectionTitle from '../sectionTitle';
-import './projects.css';
-import { projects } from '@/helpers/utils';
+import './projects.scss';
+import projects from '@/data/projects';
 import Project from './Project';
 import OtherProjects from './others';
 

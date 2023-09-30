@@ -1,0 +1,56 @@
+#contact {
+  text-align: center;
+  display: grid;
+  gap: 1.6rem;
+  max-width: 550px;
+  margin: 0 auto;
+
+  .contact-title {
+    display: grid;
+    gap: 1.2rem;
+    text-transform: capitalize;
+
+    h6 {
+      font-size: 0.8rem;
+    }
+
+    h3 {
+      font-size: 2.5rem;
+    }
+  }
+
+  .contact-actions {
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #contact {
+    .contact-title {
+      h6 {
+        font-size: 1rem;
+      }
+
+      h3 {
+        font-size: 2.6rem;
+      }
+    }
+
+    .contact-text {
+      font-size: 1.4rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #contact {
+    .contact-title h3 {
+      font-size: 3rem;
+    }
+
+    .contact-text {
+      font-size: 1.2rem;
+    }
+  }
+}

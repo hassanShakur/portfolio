@@ -2,8 +2,8 @@
 
 import { useDispatch, useSelector } from 'react-redux';
 import Sticks from './Sticks';
-import './header.css';
-import { ReduxStoreType } from '@/types/appTypes';
+import './header.scss';
+import ReduxStoreType from '@/types/reduxStore';
 import Navbar from './Navbar';
 import { menuActions } from '@/redux/app/menuSlice';
 import { Fade } from 'react-awesome-reveal';
@@ -17,12 +17,12 @@ const Header = () => {
   return (
     <>
       <header>
-        <Fade direction='down' cascade duration={500} triggerOnce>
-          <div className='nav-pane'>
+        <div className='nav-pane'>
+          <Fade direction='down' cascade duration={500} triggerOnce>
             <div className='logo'>H</div>
             <Sticks />
-          </div>
-        </Fade>
+          </Fade>
+        </div>
         <nav className={isOpen ? 'menu-open' : ''}>
           <Navbar />
         </nav>

@@ -1,0 +1,20 @@
+#about ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+  max-width: 450px;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #about ul li {
+    font-size: 1.1rem;
+  }
+}

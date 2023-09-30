@@ -1,8 +1,8 @@
 'use client';
 import { useDispatch, useSelector } from 'react-redux';
-import { ReduxStoreType } from '@/types/appTypes';
 import { menuActions } from '@/redux/app/menuSlice';
-import './sticks.css';
+import './sticks.scss';
+import ReduxStoreType from '@/types/reduxStore';
 
 const Sticks = () => {
   const dispatch = useDispatch();

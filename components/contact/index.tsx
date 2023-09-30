@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import Button from '../button';
-import './contact.css';
+import './contact.scss';
 import ContactText from './ContactText';
 import { Fade } from 'react-awesome-reveal';
 

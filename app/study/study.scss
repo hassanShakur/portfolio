@@ -1,0 +1,275 @@
+#study {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  max-width: 1200px;
+  margin: 1rem auto;
+}
+
+.certs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.cert {
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  gap: 3rem;
+  width: 90%;
+  height: auto;
+  padding: 8rem 2rem 1rem 2rem;
+  margin: 0 auto;
+  margin-top: 3rem;
+  border-radius: 8px;
+  border: 1px dashed transparent;
+  position: relative;
+
+  #integral {
+    position: absolute;
+    top: -10px;
+    height: 20px;
+    width: 6px;
+  }
+
+  .main-cert {
+    height: auto;
+    width: 50%;
+  }
+
+  .cert-text {
+    width: 50%;
+    max-width: 25rem;
+    margin-bottom: 13rem;
+
+    .text {
+      font-size: 1rem;
+    }
+  }
+
+  .mini-certs {
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+    position: absolute;
+    bottom: 1rem;
+
+    .g-img {
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      bottom: 0;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+
+      &:nth-child(1) {
+        transform: translate(20px, -5px);
+        transition-delay: 400ms;
+        z-index: 1;
+      }
+
+      &:nth-child(2) {
+        transform: translate(-10px, -10px);
+        transition-delay: 100ms;
+        z-index: 2;
+      }
+
+      &:nth-child(3) {
+        transform: translate(10px, -10px);
+        transition-delay: 150ms;
+        z-index: 2;
+      }
+
+      &:nth-child(4) {
+        transform: translate(-20px, -5px);
+        transition-delay: 300ms;
+        z-index: 1;
+      }
+
+      &:nth-child(5) {
+        transform: translate(0px, -15px);
+        z-index: 3;
+      }
+    }
+
+    &:hover .g-img {
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(25px, -60px);
+      }
+
+      &:nth-child(2) {
+        transform: rotate(-10deg) translate(-10px, -50px);
+      }
+
+      &:nth-child(3) {
+        transform: rotate(10deg) translate(10px, -50px);
+      }
+
+      &:nth-child(4) {
+        transform: rotate(-45deg) translate(-25px, -60px);
+      }
+
+      &:nth-child(5) {
+        transform: translate(0px, -10px);
+      }
+    }
+  }
+
+  &:nth-child(odd) {
+    margin-right: auto;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    box-shadow: 3px 0px 0px 0px rgb(var(--foreground-light-green));
+
+    #cert-title {
+      left: 2rem;
+    }
+
+    #cert-title h4 {
+      margin-right: 3rem;
+      margin-left: 0.5rem;
+    }
+
+    #integral {
+      right: -10px;
+      width: 6px;
+      border-top-left-radius: 8px;
+      box-shadow: -3px 0px 0px 0px rgb(var(--foreground-light-green));
+    }
+
+    .mini-certs {
+      right: 15%;
+    }
+  }
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+    margin-left: auto;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: -3px 0px 0px 0px rgb(var(--foreground-light-green));
+
+    .title-decorator {
+      flex-direction: row-reverse;
+    }
+
+    #cert-title h4 {
+      margin-left: 3rem;
+      margin-right: 0.5rem;
+    }
+
+    #integral {
+      left: -10px;
+      width: 6px;
+      border-top-right-radius: 8px;
+      box-shadow: 3px 0px 0px 0px rgb(var(--foreground-light-green));
+    }
+
+    .cert-text {
+      text-align: right;
+    }
+
+    .mini-certs {
+      left: 10%;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  #study {
+    width: 80vw;
+  }
+
+  .mini-certs .g-img {
+    width: 6vw;
+    height: 8vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .cert {
+    display: grid;
+
+    .main-cert {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .cert-text {
+      width: 90%;
+      max-width: unset;
+      margin-bottom: 5rem;
+    }
+
+    .mini-certs {
+      position: unset;
+    }
+
+    &:nth-child(odd) {
+      .cert-text {
+        margin-left: auto;
+        text-align: left;
+      }
+
+      .mini-certs {
+        margin-right: auto;
+      }
+    }
+
+    &:nth-child(even) {
+      #cert-title {
+        right: 2rem;
+        margin-right: auto;
+      }
+
+      .cert-text {
+        margin-right: auto;
+        text-align: right;
+      }
+
+      .mini-certs {
+        margin-left: auto;
+        margin-right: 12%;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #study {
+    width: 100vw;
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cert {
+    .main-cert {
+      width: 90%;
+    }
+
+    .cert-text {
+      width: 95%;
+    }
+
+    &:nth-child(odd) {
+      .mini-certs {
+        margin-right: auto;
+        margin-left: 10%;
+      }
+    }
+
+    &:nth-child(even) {
+      .mini-certs {
+        margin-left: auto;
+        margin-right: 25%;
+      }
+    }
+  }
+}

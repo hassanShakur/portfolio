@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Positions from './Positions';
-import { positions } from '@/helpers/utils';
+import positions from '@/data/positions';
 import { Fade } from 'react-awesome-reveal';
 
 const CompanyTabs = () => {

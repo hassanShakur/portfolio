@@ -3,7 +3,7 @@ import SectionTitle from '../sectionTitle';
 import AboutText from './aboutText/AboutText';
 import TechStack from './TechStack';
 import myPortrait from '@/images/hassan-shakur.jpg';
-import './about.css';
+import './about.scss';
 import Image from 'next/image';
 
 const About = () => {

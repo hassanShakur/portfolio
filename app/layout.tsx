@@ -1,6 +1,6 @@
 'use client';
 import Header from '@/components/header';
-import './globals.css';
+import './globals.scss';
 
 import store from '@/redux/store';
 import { Provider } from 'react-redux';
