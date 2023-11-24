@@ -22,4 +22,6 @@ export default function Home() {
   );
 }
 
+// TODO: Add skills learnt in each coursera certificate
+
 // For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'yarn add sharp', and Next.js will use it automatically for Image Optimization.
