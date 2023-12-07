@@ -10,17 +10,23 @@ const Project = ({ project }: { project: ProjectType }) => {
   return (
     <div className='project'>
       <Link href={project.live} className='project-img'>
-        <Image
-          src={project.image}
-          alt={project.name}
-          placeholder='blur'
-          style={{
-            borderRadius: '8px',
-            objectFit: 'cover',
-            width: '100%',
-            height: '100%',
-          }}
-        />
+        {/* <Slide direction='up' fraction={0.2} triggerOnce> */}
+          <Image
+            src={project.image}
+            alt={project.name}
+            placeholder='blur'
+            onMouseOver={(e) => {
+              console.log(e.currentTarget.style.filter)
+              // e.currentTarget.style.filter = 'unset';
+            }}
+            style={{
+              borderRadius: '8px',
+              objectFit: 'cover',
+              width: '100%',
+              height: '100%',
+            }}
+          />
+        {/* </Slide> */}
       </Link>
 
       <div className='project-info'>
