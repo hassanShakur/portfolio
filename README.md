@@ -3,7 +3,7 @@
 </div> -->
 <h1 align="center">
   <br />
-  hassanshakur - Personal portfolio
+  hassanshakur - Personal Portfolio
 </h1>
 <p align="center">
   Welcome to my portfolio <a href="https://hassanshakur.vercel.app" target="_blank">hassanshakur</a>, built with <a href="https://nextjs.org/" target="_blank">Next.js</a> and hosted with <a href="https://www.vercel.com/" target="_blank">Vercel</a>
@@ -87,12 +87,11 @@ A quick look at the top-level files and directories you'll see in this project.
     ├── types
     ├── .eslintrc.json
     ├── .gitignore
-    ├── .prettierrc
     ├── LICENSE
+    ├── README.md
     ├── next.config.js
     ├── package-lock.json
     ├── package.json
-    ├── README.md
     └── tsconfig.json
 
 <!-- copyright -->
