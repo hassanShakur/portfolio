@@ -9,7 +9,7 @@ const Footer = () => {
     <footer>
       <SocialIcons />
       <SocialEmail />
-      <Fade direction='up' cascade triggerOnce>
+      <Fade direction='up' cascade triggerOnce delay={600}>
         <p className='attribution text text-mono'>
           <Link
             href={'https://github.com/hassanShakur'}
