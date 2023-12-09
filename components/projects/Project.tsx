@@ -15,10 +15,6 @@ const Project = ({ project }: { project: ProjectType }) => {
             src={project.image}
             alt={project.name}
             placeholder='blur'
-            onMouseOver={(e) => {
-              console.log(e.currentTarget.style.filter)
-              // e.currentTarget.style.filter = 'unset';
-            }}
             style={{
               borderRadius: '8px',
               objectFit: 'cover',
