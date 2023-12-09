@@ -1,7 +1,8 @@
-<div align="center">
+<!-- <div align="center">
   <br />
-</div>
+</div> -->
 <h1 align="center">
+  <br />
   hassanshakur - Personal portfolio
 </h1>
 <p align="center">
@@ -18,6 +19,77 @@
 
 </p>
 
-<!-- <br />
+<br />
 
-![Hassan Shakur portfolio demo](images/demo.png) -->
+![Hassan Shakur portfolio demo](images/demo.png)
+
+## 🪄 Installation & Set Up
+
+1. **Clone this repository.**
+
+   ```shell
+   git clone https://github.com/hassanshakur/portfolio.git
+   ```
+
+2. **Install dependencies.**
+
+   ```shell
+   cd portfolio/
+
+   npm install
+   ```
+
+3. **Start the development server.**
+
+   ```shell
+   npm run dev
+   ```
+
+   Your site is now running at `http://localhost:3000`!
+
+4. **Open the source code and start editing!**
+
+<!-- building for production -->
+
+## 🚀 Building for production
+
+1. **Generate a full static production build.**
+
+   ```shell
+   npm run build
+   ```
+
+2. **Preview the site as it will appear once deployed.**
+
+   ```shell
+    npm start
+   ```
+
+   Your site is now running at `http://localhost:3000`!
+
+## 🧐 What's inside?
+
+A quick look at the top-level files and directories you'll see in this project.
+
+    .
+    ├── components
+    ├── data
+    ├── images
+    ├── pages
+    ├── public
+    ├── styles
+    ├── utils
+    ├── .gitignore
+    ├── .prettierrc
+    ├── LICENSE
+    ├── README.md
+    ├── next.config.js
+    ├── package-lock.json
+    ├── package.json
+    └── vercel.json
+
+<!-- copyright -->
+
+## 📝 License
+
+Licensed under the [MIT License](./LICENSE).
