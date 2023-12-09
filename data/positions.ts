@@ -41,12 +41,12 @@ const positions = [
       {
         id: 2,
         description:
-          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, excepturi possimus fugiat odio delectus consequuntur ea? Dicta assumenda.',
+          'Developed production ready frontend applications using React, Redux, JavaScript, HTML, CSS, and Bootstrap.',
       },
       {
         id: 3,
         description:
-          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, excepturi possimus fugiat odio delectus consequuntur ea? Dicta assumenda.',
+          'Developed and maintained a production ready full-stack application using Ruby on Rails, React, Redux, and PostgreSQL.',
       },
     ],
   },
