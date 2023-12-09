@@ -7,7 +7,6 @@ import { Fade } from 'react-awesome-reveal';
 const myName = 'Hassan Shakur.';
 
 const Hero = () => {
-
   return (
     <section id='hero'>
       <div className='hero-text'>
@@ -41,9 +40,12 @@ const Hero = () => {
         </Fade>
       </div>
       <Fade direction='up' delay={1800} triggerOnce>
-        <div className='hero-actions'>
+        <a
+          className='hero-actions'
+          href='mailto:dev.hassanshakur@gmail.com'
+        >
           <Button text='say hello!' />
-        </div>
+        </a>
       </Fade>
     </section>
   );
