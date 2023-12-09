@@ -76,21 +76,24 @@
 A quick look at the top-level files and directories you'll see in this project.
 
     .
+    ├── app
     ├── components
     ├── data
+    ├── fonts
+    ├── helpers
     ├── images
-    ├── pages
     ├── public
-    ├── styles
-    ├── utils
+    ├── redux
+    ├── types
+    ├── .eslintrc.json
     ├── .gitignore
     ├── .prettierrc
     ├── LICENSE
-    ├── README.md
     ├── next.config.js
     ├── package-lock.json
     ├── package.json
-    └── vercel.json
+    ├── README.md
+    └── tsconfig.json
 
 <!-- copyright -->
 
