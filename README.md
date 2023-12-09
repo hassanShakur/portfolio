@@ -23,6 +23,8 @@
 
 ![Hassan Shakur portfolio demo](images/demo.png)
 
+<br />
+
 ## 🪄 Installation & Set Up
 
 1. **Clone this repository.**
@@ -49,7 +51,7 @@
 
 4. **Open the source code and start editing!**
 
-<!-- building for production -->
+<br />
 
 ## 🚀 Building for production
 
@@ -66,6 +68,8 @@
    ```
 
    Your site is now running at `http://localhost:3000`!
+
+<br />
 
 ## 🧐 What's inside?
 
