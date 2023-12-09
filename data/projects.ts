@@ -1,8 +1,39 @@
 import resipisImg from '@/images/projects/resipis.png';
 import bankifyImg from '@/images/projects/bankify.png';
 import burgersImg from '@/images/projects/burgers.png';
+import showtimeImg from '@/images/projects/showtime.png';
+
+
+// {
+//     id: 5,
+//     name: 'show time',
+//     github: 'https://github.com/microhass/show-time',
+//     live: 'https://microhass.github.io/show-time/dist/',
+//     techs: [
+//       { id: 1, name: 'html' },
+//       { id: 2, name: 'css' },
+//       { id: 3, name: 'javaScript' },
+//     ],
+//     summary:
+//       'An app for browsing, commeting, liking movies and series. Best for fun time video recommendations.',
+//   },
 
 const projects = [
+  {
+    id: 0,
+    name: 'show time',
+    badge: 'javaScript based',
+    image: showtimeImg,
+    github: 'https://github.com/microhass/show-time',
+    live: 'https://microhass.github.io/show-time/dist/',
+    techs: [
+      { id: 1, name: 'html' },
+      { id: 2, name: 'css' },
+      { id: 3, name: 'javaScript' },
+    ],
+    summary:
+      'An app for browsing available movies, comment on them, and leave likes for fav movies and series. Best for fun time video recommendations.',
+  },
   {
     id: 1,
     name: 'resipis app',
