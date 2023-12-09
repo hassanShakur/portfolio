@@ -2,12 +2,14 @@ import './footer.scss';
 import Link from 'next/link';
 import SocialIcons from './SocialIcons';
 import SocialEmail from './SocialEmail';
+import { Fade } from 'react-awesome-reveal';
 
 const Footer = () => {
   return (
     <footer>
       <SocialIcons />
       <SocialEmail />
+      <Fade direction='up' cascade triggerOnce>
       <p className='attribution text text-mono'>
         <Link
           href={'https://github.com/hassanShakur'}
@@ -27,6 +29,7 @@ const Footer = () => {
         </Link>
         .
       </p>
+      </Fade>
     </footer>
   );
 };
