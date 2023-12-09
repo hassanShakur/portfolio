@@ -52,23 +52,6 @@ const projects = [
     summary:
       'Built as a clone with reference to the burger king website. A full-stack side project for visualizing different available snacks in a smooth & appealing interface.',
   },
-  {
-    id: 4,
-    name: 'bookDoc app',
-    badge: 'rails based',
-    image: burgersImg,
-    github: 'https://github.com/hassanShakur/burger-ing',
-    live: 'https://burger-ing.netlify.app/',
-    techs: [
-      { id: 1, name: 'react' },
-      { id: 2, name: 'rails' },
-      { id: 3, name: 'devise' },
-      { id: 4, name: 'redux' },
-      { id: 5, name: 'postgreSQL' },
-    ],
-    summary:
-      'Built as a clone with reference to the burger king website. A full-stack side project for visualizing different available snacks in a smooth & appealing interface.',
-  },
 ];
 
 export default projects;
