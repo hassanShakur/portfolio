@@ -7,7 +7,7 @@ import { Slide, Fade, Zoom } from 'react-awesome-reveal';
 const OtherProjects = () => {
   return (
     <div className='other-projects'>
-      <Slide direction='up' fraction={1} triggerOnce>
+      <Slide direction='up' fraction={0.5} triggerOnce>
         <h3>other noteworthy projects</h3>
       </Slide>
       <div className='cards'>
