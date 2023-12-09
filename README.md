@@ -16,6 +16,6 @@
   </a>
 </p>
 
-<br />
+<!-- <br />
 
-![Hassan Shakur portfolio demo](images/demo.png)
+![Hassan Shakur portfolio demo](images/demo.png) -->

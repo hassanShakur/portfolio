@@ -9,7 +9,7 @@ const projects = [
     badge: 'react based',
     image: resipisImg,
     github: 'https://github.com/hassanShakur/resipis',
-    live: 'https://resipis.netlify.app/',
+    live: 'https://github.com/hassanShakur/resipis',
     techs: [
       { id: 1, name: 'react' },
       { id: 2, name: 'javaScript' },
