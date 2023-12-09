@@ -2,10 +2,12 @@ import MV_1 from '@/images/certificates/microverse/certs/mv-1.jpg';
 import MV_2 from '@/images/certificates/microverse/certs/mv-2.jpg';
 import MV_3 from '@/images/certificates/microverse/certs/mv-3.jpg';
 import MV_4 from '@/images/certificates/microverse/certs/mv-4.jpg';
+import MV_5 from '@/images/certificates/microverse/certs/mv-5.jpg';
+import MicroMaster from '@/images/certificates/microverse/master.jpg';
 
 const microverseCerts = {
   origin: 'Microverse',
-  mainCert: MV_4,
+  mainCert: MicroMaster,
   summary:
     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sit architecto ipsum et officia error! Mollitia fugit similique nesciunt, consequatur dolorum quas ipsam rerum, cumque eos, repellat ex consectetur corrupti!',
   minis: [
@@ -36,6 +38,13 @@ const microverseCerts = {
       description:
         'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sit architecto ipsum et officia error! Mollitia fugit similique nesciunt, consequatur dolorum quas ipsam rerum, cumque eos, repellat ex consectetur corrupti!',
       certificate: MV_4,
+    },
+    {
+      id: 4,
+      course: 'Ruby on Rails Module',
+      description:
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sit architecto ipsum et officia error! Mollitia fugit similique nesciunt, consequatur dolorum quas ipsam rerum, cumque eos, repellat ex consectetur corrupti!',
+      certificate: MV_5,
     },
   ],
 };

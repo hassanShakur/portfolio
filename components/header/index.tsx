@@ -19,6 +19,7 @@ const Header = () => {
       <header>
         <div className='nav-pane'>
           <Fade direction='down' cascade duration={500} triggerOnce>
+            {/* logo h with flickering lights */}
             <div className='logo'>H</div>
             <Sticks />
           </Fade>

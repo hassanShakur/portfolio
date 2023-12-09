@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import projectImg from '@/images/hack-3.jpg';
+import studyImg from '@/images/studying.png';
 import './summary.scss'
 
 const StudySummary = () => {
@@ -21,7 +21,7 @@ const StudySummary = () => {
           </p>
         </div>
         <div className='certified'>
-          <Image src={projectImg} alt='test' placeholder='blur' />
+          <Image src={studyImg} alt='test' placeholder='blur' />
         </div>
       </div>
     </div>
