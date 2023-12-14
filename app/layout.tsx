@@ -41,10 +41,26 @@ export default function RootLayout({
             </div>
 
             <div id='connect-form'>
-              <form>
-                <input type='text' placeholder='Name' />
-                <input type='email' placeholder='Email' />
-                <textarea placeholder='Message' />
+              <form
+                action='https://formsubmit.co/657b4e407dd2cd77b3d00c44f8135290'
+                method='POST'
+              >
+                <input
+                  required
+                  name='name'
+                  type='text'
+                  placeholder='Name'
+                />
+                <input
+                  type='email'
+                  name='email'
+                  placeholder='Email'
+                />
+                <textarea
+                  required
+                  name='message'
+                  placeholder='Message'
+                />
                 <button type='submit'>Send</button>
               </form>
             </div>
