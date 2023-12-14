@@ -42,7 +42,7 @@ export default function RootLayout({
 
             <div id='connect-form'>
               <form
-                action='https://formsubmit.co/657b4e407dd2cd77b3d00c44f8135290'
+                action='https://formspree.io/f/xyyqrraz'
                 method='POST'
               >
                 <input
