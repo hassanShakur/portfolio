@@ -1,6 +1,135 @@
 
 
+#connect {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1200px;
+  min-height: 100vh;
+  background-color: #02193d !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
+  border-radius: 10px;
+
+  input {
+    border: none;
+    outline: none;
+  }
+
+  #connect-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    padding: 2rem 0;
+    border-right: 1px solid #eee;
+
+    span {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2rem;
+      gap: 2rem;
+
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+        font-weight: 400;
+        opacity: 0.8;
+      }
+    }
+  }
+
+  #connect-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    padding: 2rem 0;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+
+      input {
+        width: 100%;
+        padding: 1rem 1rem;
+        margin-bottom: 1rem;
+        // border: 1px solid #eee;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        font-weight: 400;
+        opacity: 0.8;
+      }
+
+      textarea {
+        width: 100%;
+        padding: 1rem 1rem;
+        margin-bottom: 1rem;
+        // border: 1px solid #eee;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        font-weight: 400;
+        opacity: 0.8;
+      }
+
+      button {
+        width: 100%;
+        padding: 1rem 1rem;
+        margin-bottom: 1rem;
+        // border: 1px solid #eee;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        font-weight: 400;
+        opacity: 0.8;
+        background-color: #000;
+        // color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #connect {
+    flex-direction: column;
+    width: 90vw;
+    height: 100%;
+    padding: 2rem 0;
+    margin: 0 auto;
+
+    #connect-side {
+      width: 100%;
+      height: 50%;
+      padding: 2rem 0;
+      border-right: none;
+      border-bottom: 1px solid #eee;
+    }
+
+    #connect-form {
+      width: 100%;
+      height: 50%;
+      padding: 2rem 0;
+    }
+  }
+}
 
 // <div id='connect'>
 //             <div id='connect-side'>

@@ -30,11 +30,11 @@ export default function RootLayout({
                 <h3>Let&apos;s Connect</h3>
                 <p>Send me an email or give me a call</p>
               </span>
-              <span>
+              <span id='iconed'>
                 <TbMail />
                 <p>dev.hassanshakur@gmail.com</p>
               </span>
-              <span>
+              <span id='iconed'>
                 <FiPhoneCall />
                 <p>+254 707 710 144</p>
               </span>
