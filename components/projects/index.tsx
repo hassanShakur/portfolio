@@ -2,7 +2,7 @@ import SectionTitle from '../sectionTitle';
 import './projects.scss';
 import projects from '@/data/projects';
 import Project from './Project';
-// import OtherProjects from './others';
+import OtherProjects from './others';
 
 const Projects = () => {
   return (
@@ -13,7 +13,7 @@ const Projects = () => {
           <Project key={project.id} project={project} />
         ))}
       </div>
-      {/* <OtherProjects /> */}
+      <OtherProjects />
     </section>
   );
 };
