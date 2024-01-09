@@ -1,38 +1,25 @@
 import resipisImg from '@/images/projects/resipis.png';
 import bankifyImg from '@/images/projects/bankify.png';
 import burgersImg from '@/images/projects/burgers.png';
-import showtimeImg from '@/images/projects/showtime.png';
+import axetoolImg from '@/images/projects/axetool.jpeg';
 
-
-// {
-//     id: 5,
-//     name: 'show time',
-//     github: 'https://github.com/microhass/show-time',
-//     live: 'https://microhass.github.io/show-time/dist/',
-//     techs: [
-//       { id: 1, name: 'html' },
-//       { id: 2, name: 'css' },
-//       { id: 3, name: 'javaScript' },
-//     ],
-//     summary:
-//       'An app for browsing, commeting, liking movies and series. Best for fun time video recommendations.',
-//   },
 
 const projects = [
   {
     id: 0,
-    name: 'show time',
-    badge: 'javaScript based',
-    image: showtimeImg,
-    github: 'https://github.com/microhass/show-time',
-    live: 'https://microhass.github.io/show-time/dist/',
+    name: 'accessibility toolkit',
+    badge: 'typescript based',
+    image: axetoolImg,
+    github: 'https://github.com/hassanShakur/accessibility-toolkit',
+    live: 'https://github.com/hassanShakur/accessibility-toolkit',
     techs: [
-      { id: 1, name: 'html' },
-      { id: 2, name: 'css' },
-      { id: 3, name: 'javaScript' },
+      { id: 1, name: 'next.js' },
+      { id: 2, name: 'beautiful soup' },
+      { id: 3, name: 'typeScript' },
+      { id: 4, name: 'express' },
     ],
     summary:
-      'An app for browsing available movies, comment on them, and leave likes for fav movies and series. Best for fun time video recommendations.',
+      'AI-powered accessibility toolkit for websites. Be able to determine how accessible your website is and receive recommendations on improving it for better equality and accessibility.',
   },
   {
     id: 1,
