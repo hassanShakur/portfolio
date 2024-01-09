@@ -1,7 +1,7 @@
 import resipisImg from '@/images/projects/resipis.png';
 import bankifyImg from '@/images/projects/bankify.png';
 import burgersImg from '@/images/projects/burgers.png';
-import axetoolImg from '@/images/projects/axetool.jpeg';
+import axetoolImg from '@/images/projects/axetool.png';
 
 const projects = [
   {
