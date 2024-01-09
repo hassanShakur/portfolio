@@ -1,4 +1,5 @@
 import Image from 'next/image';
+
 import studyImg from '@/images/studying.png';
 import './summary.scss'
 

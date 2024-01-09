@@ -3,7 +3,6 @@ import bankifyImg from '@/images/projects/bankify.png';
 import burgersImg from '@/images/projects/burgers.png';
 import axetoolImg from '@/images/projects/axetool.jpeg';
 
-
 const projects = [
   {
     id: 0,
@@ -72,4 +71,5 @@ const projects = [
   },
 ];
 
+export type ProjectsType = typeof projects;
 export default projects;

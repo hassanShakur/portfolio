@@ -1,10 +1,10 @@
-// 'use client'
-import SectionTitle from '../sectionTitle';
-import AboutText from './aboutText/AboutText';
-import TechStack from './TechStack';
-import myPortrait from '@/images/hassan-shakur.jpg';
-import './about.scss';
 import Image from 'next/image';
+
+import myPortrait from '@/images/hassan-shakur.jpg';
+import AboutText from './aboutText/AboutText';
+import SectionTitle from '../sectionTitle';
+import TechStack from './TechStack';
+import './about.scss';
 
 const About = () => {
   return (

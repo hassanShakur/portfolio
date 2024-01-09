@@ -1,8 +1,8 @@
-import './study.scss';
+import Gallery from '@/components/study/modal/Gallery';
+import StudySummary from '@/components/study/summary';
 import certifications from '@/data/certifications';
 import Cert from '@/components/study/cert';
-import StudySummary from '@/components/study/summary';
-import Gallery from '@/components/study/modal/Gallery';
+import './study.scss';
 
 export const metadata = {
   title: 'Hassan | Study Journey',

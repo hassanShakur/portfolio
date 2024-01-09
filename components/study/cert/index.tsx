@@ -1,7 +1,8 @@
 'use client';
-import { galleryActions } from '@/redux/app/gallerySlice';
-import Image from 'next/image';
 import { useDispatch } from 'react-redux';
+import Image from 'next/image';
+
+import { galleryActions } from '@/redux/app/gallerySlice';
 import CertType from '@/types/certType';
 import CertTitleType from './CertTitle';
 

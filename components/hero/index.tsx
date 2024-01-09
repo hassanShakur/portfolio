@@ -1,8 +1,9 @@
 'use client';
+import { Fade } from 'react-awesome-reveal';
 import Link from 'next/link';
+
 import Button from '../button';
 import './hero.scss';
-import { Fade } from 'react-awesome-reveal';
 
 const myName = 'Hassan Shakur.';
 
@@ -19,7 +20,7 @@ const Hero = () => {
           triggerOnce
         >
           <h3 className='intro clg text-mono'>Hi, my name is</h3>
-          <h1 className='name'>Hassan Shakur.</h1>
+          <h1 className='name'>{myName}</h1>
 
           <div className='title'>A software engineer.</div>
 

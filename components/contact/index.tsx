@@ -1,9 +1,10 @@
 'use client';
+import { Fade } from 'react-awesome-reveal';
 import Link from 'next/link';
+
+import ContactText from './ContactText';
 import Button from '../button';
 import './contact.scss';
-import ContactText from './ContactText';
-import { Fade } from 'react-awesome-reveal';
 
 const Contact = () => {
   return (

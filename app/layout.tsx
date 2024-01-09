@@ -1,14 +1,11 @@
 'use client';
-import Header from '@/components/header';
-import './globals.scss';
-
-import store from '@/redux/store';
 import { Provider } from 'react-redux';
-import Footer from '@/components/footer';
-import ContactForm from '@/components/contact/Form';
-// import { Inter } from 'next/font/google'
 
-// const inter = Inter({ subsets: ['latin'] })
+import ContactForm from '@/components/contact/Form';
+import Footer from '@/components/footer';
+import Header from '@/components/header';
+import store from '@/redux/store';
+import './globals.scss';
 
 export default function RootLayout({
   children,
@@ -24,7 +21,6 @@ export default function RootLayout({
           <ContactForm />
           <Footer />
         </body>
-        {/* <body className={inter.className}>{children}</body> */}
       </html>
     </Provider>
   );

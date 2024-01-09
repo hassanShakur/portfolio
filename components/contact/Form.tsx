@@ -1,5 +1,6 @@
 import { TbMail } from 'react-icons/tb';
 import { FiPhoneCall } from 'react-icons/fi';
+
 import './form.scss';
 
 const ContactForm = () => {

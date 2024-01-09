@@ -1,8 +1,8 @@
-import About from '@/components/about';
-import Contact from '@/components/contact';
 import Hero from '@/components/hero';
-import Projects from '@/components/projects';
+import About from '@/components/about';
 import Work from '@/components/work';
+import Projects from '@/components/projects';
+import Contact from '@/components/contact';
 
 export const metadata = {
   title: 'Hassan Shakur',
@@ -26,5 +26,8 @@ export default function Home() {
 
 // TODO: Add skills learnt in each coursera certificate
 // TODO: Use cert badges for microverse and coursera
+// TODO: Use an icon from Angela Yu on each section
+        
+
 
 // For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'yarn add sharp', and Next.js will use it automatically for Image Optimization.

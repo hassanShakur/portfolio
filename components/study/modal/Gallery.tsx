@@ -1,10 +1,11 @@
 'use client';
-import Image from 'next/image';
-import './gallery.scss';
-import { useDispatch, useSelector } from 'react-redux';
-import ReduxStoreType from '@/types/reduxStore';
-import { galleryActions } from '@/redux/app/gallerySlice';
 import { TbArrowBigRight, TbArrowBigLeft } from 'react-icons/tb';
+import { useDispatch, useSelector } from 'react-redux';
+import Image from 'next/image';
+
+import { galleryActions } from '@/redux/app/gallerySlice';
+import ReduxStoreType from '@/types/reduxStore';
+import './gallery.scss';
 
 const Gallery = () => {
   const dispatch = useDispatch();

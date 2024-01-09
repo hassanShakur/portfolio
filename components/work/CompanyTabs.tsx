@@ -1,8 +1,9 @@
 'use client';
-import { useState } from 'react';
-import Positions from './Positions';
-import positions from '@/data/positions';
 import { Fade } from 'react-awesome-reveal';
+import { useState } from 'react';
+
+import positions from '@/data/positions';
+import Positions from './Positions';
 
 const CompanyTabs = () => {
   const [activeTab, setActiveTab] = useState(1);

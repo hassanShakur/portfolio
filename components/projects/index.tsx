@@ -1,8 +1,8 @@
 import SectionTitle from '../sectionTitle';
-import './projects.scss';
 import projects from '@/data/projects';
-import Project from './Project';
 import OtherProjects from './others';
+import Project from './Project';
+import './projects.scss';
 
 const Projects = () => {
   return (

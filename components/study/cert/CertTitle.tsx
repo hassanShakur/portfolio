@@ -1,6 +1,7 @@
+import { TbMapPin } from 'react-icons/tb';
+
 import CertTitleType from '@/types/certTitleType';
 import './certTitle.scss';
-import { TbMapPin } from 'react-icons/tb';
 
 const CertTitleType = ({ company }: CertTitleType) => {
   return (
