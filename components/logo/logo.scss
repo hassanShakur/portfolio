@@ -1,0 +1,12 @@
+#animated-logo {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(var(--background-rgb));
+  display: grid;
+  place-items: center;
+
+  img {
+    width: 3vw;
+    height: auto;
+  }
+}
