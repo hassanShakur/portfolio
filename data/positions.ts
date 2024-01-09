@@ -31,7 +31,7 @@ const positions = [
     id: 2,
     company: 'freelancer',
     title: 'full-stack engineer',
-    period: 'january 2022 - march 2023',
+    period: 'april 2022 - march 2023',
     roles: [
       {
         id: 1,
@@ -47,6 +47,24 @@ const positions = [
         id: 3,
         description:
           'Developed and maintained a production ready full-stack application using Ruby on Rails, React, Redux, and PostgreSQL.',
+      },
+    ],
+  },
+  {
+    id: 3,
+    company: 'apprentice cloud',
+    title: 'UI/UX designer',
+    period: 'january 2022 - april 2022',
+    roles: [
+      {
+        id: 1,
+        description:
+          'Develop responsive web solutions using HTML, CSS, and JavaScript.',
+      },
+      {
+        id: 2,
+        description:
+          'Created high fidelity mockups and wireframes using Figma.',
       },
     ],
   },
