@@ -1,5 +1,4 @@
 'use client';
-import { Fade } from 'react-awesome-reveal';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 

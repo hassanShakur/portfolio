@@ -1,13 +1,13 @@
 'use client';
 import { TbBrandGithub, TbLink, TbFolder } from 'react-icons/tb';
+import { Zoom } from 'react-awesome-reveal';
 import Link from 'next/link';
-import './cardProject.scss';
-import { Slide, Zoom } from 'react-awesome-reveal';
+
 import ProjectCardType from '@/types/projectCardType';
+import './cardProject.scss';
 
 const CardProject = ({ project }: { project: ProjectCardType }) => {
   return (
-    // <Slide direction='up' cascade fraction={0.2} triggerOnce>
     <Zoom triggerOnce>
       <div className='project-card'>
         <div className='card-header'>
@@ -20,11 +20,13 @@ const CardProject = ({ project }: { project: ProjectCardType }) => {
                 <TbBrandGithub />
               </Link>
             </button>
-            <button type='button'>
-              <Link href={project.live} target='_blank'>
-                <TbLink />
-              </Link>
-            </button>
+            {project.live && (
+              <button type='button'>
+                <Link href={project.live} target='_blank'>
+                  <TbLink />
+                </Link>
+              </button>
+            )}
           </span>
         </div>
 
@@ -41,8 +43,6 @@ const CardProject = ({ project }: { project: ProjectCardType }) => {
         </div>
       </div>
     </Zoom>
-
-    // </Slide>
   );
 };
 

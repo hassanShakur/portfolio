@@ -1,11 +1,11 @@
-import Link from 'next/link';
-import navLinks from '@/data/navLinks';
-import './navLinks.scss';
-import Button from '../button';
-import { useDispatch } from 'react-redux';
-import { menuActions } from '@/redux/app/menuSlice';
 import { Fade } from 'react-awesome-reveal';
+import { useDispatch } from 'react-redux';
+import Link from 'next/link';
+
+import { menuActions } from '@/redux/app/menuSlice';
+import navLinks from '@/data/navLinks';
 import Resume from './Resume';
+import './navLinks.scss';
 
 const Navbar = () => {
   const dispatch = useDispatch();

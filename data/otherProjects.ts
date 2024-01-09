@@ -1,34 +1,8 @@
 const otherProjects = [
   {
     id: 1,
-    name: 'budget app',
-    github: 'https://github.com/microhass/budget-app',
-    live: 'https://micro-budget-app.onrender.com/',
-    techs: [
-      { id: 1, name: 'ruby' },
-      { id: 2, name: 'rails' },
-      { id: 3, name: 'postgreSQL' },
-    ],
-    summary:
-      'A Ruby on Rails application that allows users to create budgets and track their expenses.',
-  },
-  {
-    id: 2,
-    name: 'OOP School',
-    github: 'https://github.com/microhass/oop-school',
-    live: 'https://github.com/microhass/oop-school',
-    techs: [
-      { id: 1, name: 'ruby' },
-      { id: 2, name: 'shell' },
-    ],
-    summary:
-      'This is a project built using ruby that models a school library with some fun interactions.',
-  },
-  {
-    id: 3,
     name: 'my things catalog',
     github: 'https://github.com/hassanShakur/my-things-catalog',
-    live: 'https://github.com/hassanShakur/my-things-catalog',
     techs: [
       { id: 1, name: 'ruby' },
       { id: 2, name: 'shell' },
@@ -38,7 +12,7 @@ const otherProjects = [
       'This is a console app that will help you to keep a record of the stuff you own, stored on app exit.',
   },
   {
-    id: 4,
+    id: 2,
     name: 'space travellers',
     github: 'https://github.com/microhass/space-travellers',
     live: 'https://micro-space-travellers.netlify.app/',
@@ -51,21 +25,8 @@ const otherProjects = [
       'Project on active space rockets, missions and dragons, extracted from the Space Data API.',
   },
   {
-    id: 5,
-    name: 'show time',
-    github: 'https://github.com/microhass/show-time',
-    live: 'https://microhass.github.io/show-time/dist/',
-    techs: [
-      { id: 1, name: 'html' },
-      { id: 2, name: 'css' },
-      { id: 3, name: 'javaScript' },
-    ],
-    summary:
-      'An app for browsing, commeting, liking movies and series. Best for fun time video recommendations.',
-  },
-  {
-    id: 6,
-    name: 'space travellers',
+    id: 3,
+    name: 'todo list',
     github: 'https://github.com/microhass/todo-list',
     live: 'https://microhass-todo.netlify.app/',
     techs: [
@@ -78,4 +39,5 @@ const otherProjects = [
   },
 ];
 
+export type OtherProjects = typeof otherProjects;
 export default otherProjects;

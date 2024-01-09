@@ -1,8 +1,8 @@
 import SectionTitle from '../sectionTitle';
-import './projects.scss';
 import projects from '@/data/projects';
+import OtherProjects from './others';
 import Project from './Project';
-// import OtherProjects from './others';
+import './projects.scss';
 
 const Projects = () => {
   return (
@@ -13,7 +13,7 @@ const Projects = () => {
           <Project key={project.id} project={project} />
         ))}
       </div>
-      {/* <OtherProjects /> */}
+      <OtherProjects />
     </section>
   );
 };

@@ -6,9 +6,9 @@ import {
   FaAngellist,
   FaMediumM,
 } from 'react-icons/fa';
-import { Fade } from 'react-awesome-reveal';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+
 export const footerIcons = [
   {
     id: 1,
@@ -41,6 +41,7 @@ export const footerIcons = [
     href: 'https://medium.com/@hassanShakur',
   },
 ];
+
 const SocialIcons = () => {
   const [show, setShow] = useState({
     transform: 'translateX(-20px)',
@@ -50,11 +51,10 @@ const SocialIcons = () => {
   useEffect(() => {
     setTimeout(() => {
       setShow({
-      transform: 'translateX(0)',
-      opacity: 'inherit',
-    });
+        transform: 'translateX(0)',
+        opacity: 'inherit',
+      });
     }, 2000);
-    
   }, []);
 
   return (

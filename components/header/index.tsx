@@ -1,12 +1,12 @@
 'use client';
-
 import { useDispatch, useSelector } from 'react-redux';
-import Sticks from './Sticks';
-import './header.scss';
-import ReduxStoreType from '@/types/reduxStore';
-import Navbar from './Navbar';
-import { menuActions } from '@/redux/app/menuSlice';
 import { Fade } from 'react-awesome-reveal';
+
+import { menuActions } from '@/redux/app/menuSlice';
+import ReduxStoreType from '@/types/reduxStore';
+import Sticks from './Sticks';
+import Navbar from './Navbar';
+import './header.scss';
 
 const Header = () => {
   const dispatch = useDispatch();

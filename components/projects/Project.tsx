@@ -1,10 +1,11 @@
 'use client';
+import { TbBrandGithub, TbLink } from 'react-icons/tb';
+import { Slide } from 'react-awesome-reveal';
 import Image from 'next/image';
 import Link from 'next/link';
-import { TbBrandGithub, TbLink } from 'react-icons/tb';
-import './project.scss';
-import { Slide } from 'react-awesome-reveal';
+
 import ProjectType from '@/types/projectType';
+import './project.scss';
 
 const Project = ({ project }: { project: ProjectType }) => {
   return (
