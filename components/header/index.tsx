@@ -1,9 +1,11 @@
 'use client';
 import { useDispatch, useSelector } from 'react-redux';
 import { Fade } from 'react-awesome-reveal';
+import Image from 'next/image';
 
 import { menuActions } from '@/redux/app/menuSlice';
 import ReduxStoreType from '@/types/reduxStore';
+import myLogoImg from '@/images/fav.png';
 import Sticks from './Sticks';
 import Navbar from './Navbar';
 import './header.scss';
@@ -20,7 +22,9 @@ const Header = () => {
         <div className='nav-pane'>
           <Fade direction='down' cascade duration={500} triggerOnce>
             {/* logo h with flickering lights */}
-            <div className='logo'>H</div>
+            <div className='logo'>
+              <Image src={myLogoImg} alt='Hassan Shakur Logo' width={30} height={30}  />
+            </div>
             <Sticks />
           </Fade>
         </div>
