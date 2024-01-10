@@ -5,8 +5,51 @@
   display: grid;
   place-items: center;
 
+  .logo-border {
+    // width: 4vw;
+    border: 2px solid rgb(var(--foreground-light-green));
+    // border: 2px solid transparent;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    padding: 2px;
+    position: relative;
+    // overflow: hidden;
+    // background-color: red;
+    // animation: drawBorder 1s ease-in-out infinite alternate;
+
+    &::before {
+      content: '';
+      background-image: conic-gradient(
+        rgba(var(--foreground-rgb), 0.6),
+        rgba(var(--foreground-rgb), 0.6),
+        transparent 100deg
+      );
+      transform: rotateZ(-10deg);
+      //   background-color: blue;
+      width: 250%;
+      height: 250%;
+      position: absolute;
+      bottom: -175%;
+      left: -175%;
+      border-radius: 50%;
+    }
+  }
+
   img {
     width: 3vw;
     height: auto;
+  }
+}
+
+@keyframes movingBorder {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
