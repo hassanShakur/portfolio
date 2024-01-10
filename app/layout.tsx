@@ -17,10 +17,10 @@ export default function RootLayout({
     <Provider store={store}>
       <html lang='en'>
         <body>
-          {/* <Header />
-          {/* {children} */}
-          {/* <ContactForm />
-          <Footer />  */}
+          <Header />
+          {children} 
+          <ContactForm />
+          <Footer /> 
           <AnimatedLogo />
         </body>
       </html>

@@ -4,6 +4,13 @@
   background: rgb(var(--background-rgb));
   display: grid;
   place-items: center;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  animation: disappear 0.2s forwards 1;
+  animation-delay: 4s;
 
   .logo-border {
     // width: 4vw;
@@ -13,28 +20,27 @@
     place-items: center;
     padding: 2px;
     position: relative;
-    box-shadow: n1ne;
     box-shadow: 0px 0px 2px 1px rgba(var(--foreground-rgb), 0.5);
-    animation: shadow 1s forwards infinite;
+    animation: shadow 4s forwards 1;
     animation-timing-function: step-end;
     filter: opacity(0.5) grayscale(1);
 
     &::before {
       content: '';
       background-image: conic-gradient(
-        rgba(var(--foreground-rgb), 0.6),
-        rgba(var(--foreground-rgb), 0.6),
-        transparent 100deg
+        rgba(var(--foreground-rgb), 0.5),
+        rgba(var(--foreground-rgb), 0.5),
+        transparent 80deg
       );
-      transform: rotateZ(-10deg);
-      //   background-color: blue;
+      transform: rotateZ(3deg);
       width: 250%;
       height: 250%;
       position: absolute;
       bottom: -175%;
       left: -175%;
       border-radius: 50%;
-      animation: flicker 1s ease-in-out forwards infinite;
+      opacity: 0;
+      animation: flicker 4s forwards 1;
       animation-timing-function: step-end;
     }
   }
@@ -43,92 +49,82 @@
     width: 3vw;
     height: auto;
     filter: opacity(0.5) grayscale(1);
-    animation: shadow 1s ease-in-out forwards infinite;
+    animation: shadow 4s forwards 1;
     animation-timing-function: step-end;
   }
 }
 
 @keyframes shadow {
-  // shown only when flicker is on
   0% {
     box-shadow: 0px 0px 2px 1px transparent;
     filter: opacity(0.5) grayscale(1);
   }
+  5% {
+    box-shadow: 8px -8px 3px 1px rgba(var(--foreground-light-green), 0.3);
+    filter: unset;
+  }
   10% {
+    box-shadow: 0px 0px 2px 1px transparent;
+    filter: opacity(0.5) grayscale(1);
+  }
+  15% {
     box-shadow: 8px -8px 3px 1px rgba(var(--foreground-light-green), 0.3);
     filter: unset;
   }
-  20% {
-    box-shadow: 8px -8px 3px 1px rgba(var(--foreground-light-green), 0.3);
-    filter: unset;
-  }
-  30% {
-    box-shadow: 8px -8px 3px 1px rgba(var(--foreground-light-green), 0.3);
-    filter: unset;
+  25% {
+    box-shadow: 0px 0px 2px 1px transparent;
+    filter: opacity(0.5) grayscale(1);
   }
   40% {
-    box-shadow: 0px 0px 2px 1px transparent;
-    filter: opacity(0.5) grayscale(1);
-  }
-  50% {
-    box-shadow: 0px 0px 2px 1px transparent;
-    filter: opacity(0.5) grayscale(1);
-  }
-  60% {
-    box-shadow: 0px 0px 2px 1px transparent;
-    filter: opacity(0.5) grayscale(1);
-  }
-  70% {
     box-shadow: 8px -8px 3px 1px rgba(var(--foreground-light-green), 0.3);
     filter: unset;
   }
   80% {
-    box-shadow: 8px -8px 3px 1px rgba(var(--foreground-light-green), 0.3);
-    filter: unset;
-  }
-  90% {
     box-shadow: 0px 0px 2px 1px transparent;
-    filter: opacity(0.5) grayscale(1);
+    filter: unset;
   }
   100% {
     box-shadow: 0px 0px 2px 1px transparent;
-    filter: opacity(0.5) grayscale(1);
+    filter: unset;
   }
 }
 
 @keyframes flicker {
-  //   flicker twice then go off
   0% {
     opacity: 0;
   }
+  5% {
+    opacity: 1;
+  }
   10% {
+    opacity: 0;
+  }
+  15% {
     opacity: 1;
   }
-  20% {
-    opacity: 1;
-  }
-  30% {
-    opacity: 1;
+  25% {
+    opacity: 0;
   }
   40% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  60% {
-    opacity: 0;
-  }
-  70% {
     opacity: 1;
   }
   80% {
-    opacity: 1;
-  }
-  90% {
     opacity: 0;
   }
+}
+
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(0.6);
+  }
+
   100% {
-    opacity: 0;
+    transform: scale(0);
   }
 }
