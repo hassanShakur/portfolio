@@ -14,7 +14,7 @@ const SocialEmail = () => {
         transform: 'translateX(0) rotate(90deg)',
         opacity: 'inherit',
       });
-    }, 2600);
+    }, 7000);
   }, []);
 
   return (

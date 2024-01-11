@@ -17,7 +17,8 @@ const Navbar = () => {
         cascade
         duration={600}
         damping={0.3}
-        delay={300}
+        delay={5000}
+        // delay={300}
         triggerOnce
       >
         <ul>
@@ -39,7 +40,7 @@ const Navbar = () => {
         direction='down'
         cascade
         duration={700}
-        delay={800}
+        delay={5500}
         triggerOnce
       >
         <Resume />

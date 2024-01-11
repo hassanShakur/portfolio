@@ -2,9 +2,11 @@ import { TbMail } from 'react-icons/tb';
 import { FiPhoneCall } from 'react-icons/fi';
 
 import './form.scss';
+import { Fade } from 'react-awesome-reveal';
 
 const ContactForm = () => {
   return (
+    <Fade direction='up' cascade triggerOnce duration={800}>
     <div id='connect'>
       <div id='connect-side'>
         <span>
@@ -35,6 +37,7 @@ const ContactForm = () => {
         </form>
       </div>
     </div>
+    </Fade>
   );
 };
 

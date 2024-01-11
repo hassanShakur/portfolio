@@ -9,9 +9,9 @@ import './contact.scss';
 const Contact = () => {
   return (
     <section id='contact'>
-      <Fade direction='up' cascade triggerOnce>
+      <Fade direction='up' cascade triggerOnce duration={800}>
         <div className='contact-title'>
-          <Fade direction='up' cascade triggerOnce>
+          <Fade direction='up' cascade triggerOnce duration={800}>
             <h6 className='clg text-mono'>where to now?</h6>
             <h3>get in touch</h3>
           </Fade>

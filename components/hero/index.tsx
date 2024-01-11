@@ -16,7 +16,7 @@ const Hero = () => {
           cascade
           duration={500}
           damping={0.2}
-          delay={1500}
+          delay={6000}
           triggerOnce
         >
           <h3 className='intro clg text-mono'>Hi, my name is</h3>
@@ -40,7 +40,7 @@ const Hero = () => {
           </p>
         </Fade>
       </div>
-      <Fade direction='up' delay={1800} triggerOnce>
+      <Fade direction='up' delay={6200} triggerOnce>
         <a
           className='hero-actions'
           href='mailto:dev.hassanshakur@gmail.com'

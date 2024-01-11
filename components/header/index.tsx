@@ -20,7 +20,7 @@ const Header = () => {
     <>
       <header>
         <div className='nav-pane'>
-          <Fade direction='down' cascade duration={500} triggerOnce>
+          <Fade direction='down' cascade duration={500} delay={4800} triggerOnce>
             {/* logo h with flickering lights */}
             <div className='logo'>
               <Image src={myLogoImg} alt='Hassan Shakur Logo' width={30} height={30}  />

@@ -54,7 +54,7 @@ const SocialIcons = () => {
         transform: 'translateX(0)',
         opacity: 'inherit',
       });
-    }, 2000);
+    }, 6500);
   }, []);
 
   return (
