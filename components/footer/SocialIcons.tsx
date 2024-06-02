@@ -26,7 +26,7 @@ export const footerIcons = [
     id: 3,
     name: 'Twitter',
     icon: <FaTwitter />,
-    href: 'https://twitter.com/HassShakur',
+    href: 'https://twitter.com/_hassanshakur',
   },
   {
     id: 4,
